@@ -1,16 +1,22 @@
-using System;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit.Inputs.Haptics;
 
 public class GloveScript : MonoBehaviour {
-    private void OnCollisionEnter(Collision other) {
-        
-    }
+    public HapticImpulsePlayer controller;
+    
+    public GameManagerScript gameManager;
 
     private void OnTriggerEnter(Collider other) {
-        Debug.Log(other.gameObject.name);
-        if (other.CompareTag("CubeShatter")) {
-            Debug.Log("Collision with cube");
+        if (other.CompareTag("CubeShatter")) {  
+            SendHapticFeedback();
+            gameManager.IncreaseScore();
+            other.gameObject.GetComponent<BoxCollider>().enabled = false;
+            other.gameObject.GetComponent<BoxMovement>().enabled = false;
             other.gameObject.GetComponent<ShatterExplosion>().Explode();
         }
+    }
+
+    private void SendHapticFeedback() {
+        controller.SendHapticImpulse(0.5f, 0.2f);
     }
 }
