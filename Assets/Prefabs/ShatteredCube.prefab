@@ -993,6 +993,7 @@ GameObject:
   - component: {fileID: 7631192373499182307}
   - component: {fileID: 846578939209284758}
   - component: {fileID: 6074473645491223910}
+  - component: {fileID: 6634178111762012802}
   m_Layer: 6
   m_Name: ShatteredCube
   m_TagString: CubeShatter
@@ -1163,6 +1164,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0586026, y: 2.03721, z: 2.039349}
   m_Center: {x: -0.017074049, y: 0.18038422, z: -0.0067079067}
+--- !u!54 &6634178111762012802
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675713944239358772}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
 --- !u!1 &867136484082028004
 GameObject:
   m_ObjectHideFlags: 0
