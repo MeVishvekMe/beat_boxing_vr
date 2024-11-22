@@ -1,9 +1,9 @@
 using UnityEngine;
 
 public class GraphicLineMovement : MonoBehaviour {
-    public float movementSpeed = 200f;
+    private float _movementSpeed = 100f;
 
     void Update() {
-        transform.localPosition -= new Vector3(0, 0, movementSpeed * Time.deltaTime);
+        transform.localPosition -= new Vector3(0, 0, _movementSpeed * Time.deltaTime);
     }
 }
