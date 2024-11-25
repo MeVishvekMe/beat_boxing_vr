@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 6c4843b5e2b98b44398179c9e0d238d6
+timeCreated: 1546226488
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 137585
+  packageName: Starfighter Set 01
+  packageVersion: 1.0
+  assetPath: Assets/PolyAnarchy/Weapon Systems/Prefabs/ws_pod_B_rocket_launcher_12.prefab
+  uploadId: 288757

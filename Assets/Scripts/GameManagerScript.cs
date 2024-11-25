@@ -1,3 +1,4 @@
+using System.Text;
 using TMPro;
 using UnityEngine;
 
@@ -22,7 +23,12 @@ public class GameManagerScript : MonoBehaviour {
     }
 
     private void UpdateScoreText() {
-        scoreText.text = "Score : " + _score + "\n" + "Multiplier : x" + _multiplier;
+        StringBuilder sb = new StringBuilder();
+        sb.Append(_score + "\n");
+        sb.Append(_multiplier);
+        scoreText.text = sb.ToString();
     }
+
+
 
 }

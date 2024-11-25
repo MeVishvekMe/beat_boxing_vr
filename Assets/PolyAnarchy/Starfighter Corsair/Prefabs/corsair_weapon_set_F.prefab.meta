@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: a2e3152b492b7cc409039a9e86911095
+timeCreated: 1547790191
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 137585
+  packageName: Starfighter Set 01
+  packageVersion: 1.0
+  assetPath: Assets/PolyAnarchy/Starfighter Corsair/Prefabs/corsair_weapon_set_F.prefab
+  uploadId: 288757

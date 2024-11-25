@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 0fdfa92aa1208af4c9ccc4022adc1631
+timeCreated: 1547000551
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 137585
+  packageName: Starfighter Set 01
+  packageVersion: 1.0
+  assetPath: Assets/PolyAnarchy/Starfighter Thug/Prefabs/starfighter_thug_striped_moth
+    blue.prefab
+  uploadId: 288757

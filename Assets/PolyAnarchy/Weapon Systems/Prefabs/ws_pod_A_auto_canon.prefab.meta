@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: de011ef970d14a9409760a435cb921c1
+timeCreated: 1545289460
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 137585
+  packageName: Starfighter Set 01
+  packageVersion: 1.0
+  assetPath: Assets/PolyAnarchy/Weapon Systems/Prefabs/ws_pod_A_auto_canon.prefab
+  uploadId: 288757

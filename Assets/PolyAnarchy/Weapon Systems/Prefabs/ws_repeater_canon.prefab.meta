@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 56a10a8db89d89b4ab2e3956045083a0
+timeCreated: 1546231295
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 137585
+  packageName: Starfighter Set 01
+  packageVersion: 1.0
+  assetPath: Assets/PolyAnarchy/Weapon Systems/Prefabs/ws_repeater_canon.prefab
+  uploadId: 288757

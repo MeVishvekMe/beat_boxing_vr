@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 27d71c284f3c40042969e0a3071cc72f
+timeCreated: 1545292049
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 137585
+  packageName: Starfighter Set 01
+  packageVersion: 1.0
+  assetPath: Assets/PolyAnarchy/Weapon Systems/Prefabs/ws_pod_C_disruptor_blaster.prefab
+  uploadId: 288757

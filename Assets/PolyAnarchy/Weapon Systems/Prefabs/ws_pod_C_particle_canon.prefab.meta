@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 3a75f11ec945e244c91fbeeaa049bab9
+timeCreated: 1545291762
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 137585
+  packageName: Starfighter Set 01
+  packageVersion: 1.0
+  assetPath: Assets/PolyAnarchy/Weapon Systems/Prefabs/ws_pod_C_particle_canon.prefab
+  uploadId: 288757

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 22f20649c8dce4c4087601203f014cad
+timeCreated: 1546210510
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 137585
+  packageName: Starfighter Set 01
+  packageVersion: 1.0
+  assetPath: Assets/PolyAnarchy/Starfighter Reaper/Prefabs/starfighter_reaper_hydra_pink.prefab
+  uploadId: 288757

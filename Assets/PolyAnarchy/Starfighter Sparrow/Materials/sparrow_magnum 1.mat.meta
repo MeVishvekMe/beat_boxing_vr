@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: c644266b896e93445accc0667f14b0e6
+timeCreated: 1547289658
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 137585
+  packageName: Starfighter Set 01
+  packageVersion: 1.0
+  assetPath: Assets/PolyAnarchy/Starfighter Sparrow/Materials/sparrow_magnum 1.mat
+  uploadId: 288757

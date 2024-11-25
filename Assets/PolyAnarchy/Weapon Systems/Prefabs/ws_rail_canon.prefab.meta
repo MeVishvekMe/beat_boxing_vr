@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 8afc8fb8a8a3ba74593d7e0c685f6c4e
+timeCreated: 1546231291
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 137585
+  packageName: Starfighter Set 01
+  packageVersion: 1.0
+  assetPath: Assets/PolyAnarchy/Weapon Systems/Prefabs/ws_rail_canon.prefab
+  uploadId: 288757

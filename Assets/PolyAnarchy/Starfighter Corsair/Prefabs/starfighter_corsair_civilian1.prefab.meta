@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 28a19ea505f7b0546ab94328e7a3b438
+timeCreated: 1547786841
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 137585
+  packageName: Starfighter Set 01
+  packageVersion: 1.0
+  assetPath: Assets/PolyAnarchy/Starfighter Corsair/Prefabs/starfighter_corsair_civilian1.prefab
+  uploadId: 288757

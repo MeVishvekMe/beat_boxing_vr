@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 780b0bf6b5b0d884f97d347b3a7268b8
+timeCreated: 1547786738
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 137585
+  packageName: Starfighter Set 01
+  packageVersion: 1.0
+  assetPath: Assets/PolyAnarchy/Starfighter Corsair/Prefabs/starfighter_corsair_nose.prefab
+  uploadId: 288757

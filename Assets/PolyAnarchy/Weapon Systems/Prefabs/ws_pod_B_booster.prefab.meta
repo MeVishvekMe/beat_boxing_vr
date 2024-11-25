@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 3f6cbe4148acfc442a73e1ed638fad55
+timeCreated: 1545292764
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 137585
+  packageName: Starfighter Set 01
+  packageVersion: 1.0
+  assetPath: Assets/PolyAnarchy/Weapon Systems/Prefabs/ws_pod_B_booster.prefab
+  uploadId: 288757

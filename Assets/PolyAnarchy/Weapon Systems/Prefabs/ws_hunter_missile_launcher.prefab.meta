@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 9a676a1e0aeba8b48bdd72276803f793
+timeCreated: 1545294876
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 137585
+  packageName: Starfighter Set 01
+  packageVersion: 1.0
+  assetPath: Assets/PolyAnarchy/Weapon Systems/Prefabs/ws_hunter_missile_launcher.prefab
+  uploadId: 288757

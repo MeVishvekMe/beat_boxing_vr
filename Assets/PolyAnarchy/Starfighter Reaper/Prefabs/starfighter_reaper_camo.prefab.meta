@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: a8c0ab14aa67c554991a14b6ffc7a329
+timeCreated: 1545448513
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 137585
+  packageName: Starfighter Set 01
+  packageVersion: 1.0
+  assetPath: Assets/PolyAnarchy/Starfighter Reaper/Prefabs/starfighter_reaper_camo.prefab
+  uploadId: 288757

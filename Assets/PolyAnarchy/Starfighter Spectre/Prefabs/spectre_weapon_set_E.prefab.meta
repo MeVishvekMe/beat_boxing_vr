@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: f7e231d1d475a94468db8d57851223c9
+timeCreated: 1547536910
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 137585
+  packageName: Starfighter Set 01
+  packageVersion: 1.0
+  assetPath: Assets/PolyAnarchy/Starfighter Spectre/Prefabs/spectre_weapon_set_E.prefab
+  uploadId: 288757

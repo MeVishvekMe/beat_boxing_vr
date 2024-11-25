@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: bbc7fbe0387b4be44a313854b5c314d5
+timeCreated: 1546414808
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 137585
+  packageName: Starfighter Set 01
+  packageVersion: 1.0
+  assetPath: Assets/PolyAnarchy/Starfighter Thug/Materials/thug_redback.mat
+  uploadId: 288757

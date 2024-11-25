@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 472c901fd9b25814fb63ec2c0d548d3c
+timeCreated: 1545534157
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 137585
+  packageName: Starfighter Set 01
+  packageVersion: 1.0
+  assetPath: Assets/PolyAnarchy/Weapon Systems/Prefabs/ws_pod_B_heavy_missile.prefab
+  uploadId: 288757

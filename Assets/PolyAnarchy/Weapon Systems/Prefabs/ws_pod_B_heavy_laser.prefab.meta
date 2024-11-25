@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 1bc1c412f78eebd40bc85412d7951dd1
+timeCreated: 1545449678
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 137585
+  packageName: Starfighter Set 01
+  packageVersion: 1.0
+  assetPath: Assets/PolyAnarchy/Weapon Systems/Prefabs/ws_pod_B_heavy_laser.prefab
+  uploadId: 288757

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 3b36eb6ecd491b7429199fad7cbb1f04
+timeCreated: 1547780814
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 137585
+  packageName: Starfighter Set 01
+  packageVersion: 1.0
+  assetPath: Assets/PolyAnarchy/Starfighter Corsair/Materials/corsair_civilian2.mat
+  uploadId: 288757

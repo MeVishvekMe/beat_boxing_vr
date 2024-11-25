@@ -7,8 +7,11 @@ public class GloveScript : MonoBehaviour {
     
     public GameManagerScript gameManager;
     public AudioSource hitSoundAudioSource;
+
+    public AudioClip[] hitAudios;
+    public GameObject hitParticlesPrefab;
     
-    public SceneGraphicsManagerScript sceneGraphicsManager;
+    
 
     private void Start() {
         
@@ -16,12 +19,16 @@ public class GloveScript : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag("CubeShatter")) {
+            var collisionPoint = other.ClosestPoint(transform.position);
+            GameObject gb = Instantiate(hitParticlesPrefab, collisionPoint, Quaternion.identity);
+            gb.GetComponent<ParticleSystem>().Play();
+            Destroy(gb, 1f);
             Rigidbody rb = other.GetComponent<Rigidbody>();
             Destroy(rb);
             SendHapticFeedback();
-            hitSoundAudioSource.Play();
+            PlayRandomHitSound();
             gameManager.IncreaseScore();
-            // sceneGraphicsManager.SpawnGraphicLines();
+            
             other.gameObject.GetComponent<BoxCollider>().enabled = false;
             other.gameObject.GetComponent<BoxMovement>().enabled = false;
             other.gameObject.GetComponent<ShatterExplosion>().Explode();
@@ -30,5 +37,10 @@ public class GloveScript : MonoBehaviour {
 
     private void SendHapticFeedback() {
         controller.SendHapticImpulse(0.5f, 0.2f);
+    }
+
+    private void PlayRandomHitSound() {
+        hitSoundAudioSource.clip = hitAudios[UnityEngine.Random.Range(0, hitAudios.Length)];
+        hitSoundAudioSource.Play();
     }
 }

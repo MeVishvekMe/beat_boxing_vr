@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: ee50060971949dd469c527a09a7048d4
+timeCreated: 1546229126
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 137585
+  packageName: Starfighter Set 01
+  packageVersion: 1.0
+  assetPath: Assets/PolyAnarchy/Weapon Systems/Prefabs/ws_pod_C_blasters.prefab
+  uploadId: 288757

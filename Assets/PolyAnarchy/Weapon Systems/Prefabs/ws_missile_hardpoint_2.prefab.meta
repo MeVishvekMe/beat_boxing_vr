@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: eccd79c408c649945a58b2605cfe133c
+timeCreated: 1545293194
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 137585
+  packageName: Starfighter Set 01
+  packageVersion: 1.0
+  assetPath: Assets/PolyAnarchy/Weapon Systems/Prefabs/ws_missile_hardpoint_2.prefab
+  uploadId: 288757

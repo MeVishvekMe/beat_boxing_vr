@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: b080f022496144442a0813ad63107a71
+timeCreated: 1545294042
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 137585
+  packageName: Starfighter Set 01
+  packageVersion: 1.0
+  assetPath: Assets/PolyAnarchy/Weapon Systems/Prefabs/ws_3_harpoon_missiles.prefab
+  uploadId: 288757

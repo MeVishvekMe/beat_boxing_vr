@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 15bddf9a6f0d1f343afc72f094085257
+timeCreated: 1547368445
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 137585
+  packageName: Starfighter Set 01
+  packageVersion: 1.0
+  assetPath: Assets/PolyAnarchy/Starfighter Sparrow/Prefabs/sparrow_weapon_set_C.prefab
+  uploadId: 288757
