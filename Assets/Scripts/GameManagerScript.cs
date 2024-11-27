@@ -25,10 +25,8 @@ public class GameManagerScript : MonoBehaviour {
     private void UpdateScoreText() {
         StringBuilder sb = new StringBuilder();
         sb.Append(_score + "\n");
-        sb.Append(_multiplier);
+        sb.Append("x" + _multiplier);
         scoreText.text = sb.ToString();
     }
-
-
-
+    
 }

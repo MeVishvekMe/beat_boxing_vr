@@ -12,9 +12,14 @@ public class SpawnBox : MonoBehaviour {
     public Vector2 spawnRangeY;    // Random range for Y position
     // public float targetZ = -8f;    // Target Z position
     public float spawnZ = 5.5f;    // Initial spawn Z position
-    public float[] timestamps;     // Time when boxes should reach the target
+    private float[] timestamps;  // Time when boxes should reach the target
 
+    public GameObject timeStampGameObject;
     private int _currentIndex = 0;
+    
+    private void Start() {
+        timestamps = timeStampGameObject.GetComponent<GodishTimestamps>().ReturnTimeStampsArray();
+    }
 
     private void Update() {
         Debug.Log(audioSource.time);
