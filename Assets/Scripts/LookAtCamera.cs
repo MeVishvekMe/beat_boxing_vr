@@ -7,5 +7,7 @@ public class LookAtCamera : MonoBehaviour {
 
         // Apply a 180-degree rotation around the Y-axis
         transform.rotation *= Quaternion.Euler(0, 180f, 0);
+        
+        
     }
 }

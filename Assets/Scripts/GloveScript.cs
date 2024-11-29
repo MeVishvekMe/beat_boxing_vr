@@ -28,10 +28,9 @@ public class GloveScript : MonoBehaviour {
             SendHapticFeedback();
             PlayRandomHitSound();
             gameManager.IncreaseScore();
-            
             other.gameObject.GetComponent<BoxCollider>().enabled = false;
             other.gameObject.GetComponent<BoxMovement>().enabled = false;
-            other.gameObject.GetComponent<ShatterExplosion>().Explode();
+            other.gameObject.GetComponent<ShatterExplosion>().Explode(other.transform);
         }
     }
 
