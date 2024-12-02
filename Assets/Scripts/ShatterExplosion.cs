@@ -12,10 +12,10 @@ public class ShatterExplosion : MonoBehaviour {
             Vector3 forceDirection = (childRB.position - punch.position).normalized;
 
             // Apply force in the calculated direction
-            childRB.AddForce(forceDirection * 25f, ForceMode.Impulse);
+            childRB.AddForce(forceDirection * 10f, ForceMode.Impulse);
 
             // Apply an explosion force
-            childRB.AddExplosionForce(100f, explodePoint.position, 2f);
+            childRB.AddExplosionForce(60f, explodePoint.position, 2f);
         }
     }
 }
