@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.ProBuilder.MeshOperations;
 using UnityEngine.XR.Interaction.Toolkit.Inputs.Haptics;
 
 public class GloveScript : MonoBehaviour {
@@ -10,8 +11,8 @@ public class GloveScript : MonoBehaviour {
 
     public AudioClip[] hitAudios;
     public GameObject hitParticlesPrefab;
-    
-    
+
+    public int shatterIndex = 0;
 
     private void Start() {
         
@@ -33,6 +34,12 @@ public class GloveScript : MonoBehaviour {
             other.gameObject.GetComponent<ShatterExplosion>().Explode(other.transform);
         }
     }
+
+    // private void OnTriggerStay(Collider other) {
+    //     if (other.tag == "CubeDouble") {
+    //         ShatterExplosion se = gameObject.GetComponent<ShatterExplosion>();
+    //     }
+    // }
 
     private void SendHapticFeedback() {
         controller.SendHapticImpulse(0.5f, 0.2f);

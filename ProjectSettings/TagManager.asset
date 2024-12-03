@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Anchor
   - CubeShatter
+  - CubeDouble
   layers:
   - Default
   - TransparentFX
