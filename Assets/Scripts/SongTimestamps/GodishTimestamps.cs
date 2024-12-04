@@ -2,12 +2,22 @@ using UnityEngine;
 
 public class GodishTimestamps : MonoBehaviour {
     private float[] markerTimes = new float[273];
+    private float[] doubleMarkerTimes = new float[2];
 
     public float[] ReturnTimeStampsArray() {
         return markerTimes;
     }
 
+    public float[] ReturnDoubleTimeStampsArray() {
+        return doubleMarkerTimes;
+    }
+
     void Start() {
+        // Double Boxes TimeStamps
+        doubleMarkerTimes[0] = 1.08f;
+        doubleMarkerTimes[1] = 4.2f;
+        
+        // Single Boxes TimeStamps
         markerTimes[0] = 6.80f; // 00:00:06:40
         markerTimes[1] = 8.52f; // 00:00:08:26
         markerTimes[2] = 10.18f; // 00:00:10:09

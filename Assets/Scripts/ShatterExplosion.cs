@@ -26,8 +26,10 @@ public class ShatterExplosion : MonoBehaviour {
         }
     }
 
-    public void DoubleExplode(Transform punch) {
+    public bool DoubleExplode(Transform punch) {
         if (explode[0] && explode[1]) {
+            GetComponent<BoxCollider>().enabled = false;
+            GetComponent<BoxMovement>().enabled = false;
             foreach (Transform child in transform) {
                 Destroy(child.gameObject, 5f);
                 Rigidbody childRB = child.gameObject.AddComponent<Rigidbody>();
@@ -41,6 +43,10 @@ public class ShatterExplosion : MonoBehaviour {
                 // Apply an explosion force
                 childRB.AddExplosionForce(60f, explodePoint.position, 2f);
             }
+            return true;
+        }
+        else {
+            return false;
         }
     }
 }

@@ -5173,6 +5173,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: d22437e560b18d04d8fb4e66ae0ee89d, type: 3}
   - {fileID: 8300000, guid: 10ce505cf4973c94bbf7db40e79dd70b, type: 3}
   hitParticlesPrefab: {fileID: 5024009746357069194, guid: ec3f674830402cc45bce805cf6493db7, type: 3}
+  shatterIndex: 0
 --- !u!135 &235713111
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5652,6 +5653,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: d22437e560b18d04d8fb4e66ae0ee89d, type: 3}
   - {fileID: 8300000, guid: 10ce505cf4973c94bbf7db40e79dd70b, type: 3}
   hitParticlesPrefab: {fileID: 5024009746357069194, guid: ec3f674830402cc45bce805cf6493db7, type: 3}
+  shatterIndex: 1
 --- !u!135 &846149535
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6126,7 +6128,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6496,6 +6498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 857851839}
   boxPrefab: {fileID: 3421255345719884216, guid: b874ae3e2d5bde94aa103abd30ebb0d6, type: 3}
+  doubleBoxPrefab: {fileID: 3421255345719884216, guid: d7252082a2142f34e953c92a3fac9c87, type: 3}
   spawnRangeX: {x: -1, y: 1}
   spawnRangeY: {x: 1.4, y: 1.8}
   spawnZ: 5.5

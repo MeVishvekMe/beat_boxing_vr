@@ -12,7 +12,7 @@ public class GloveScript : MonoBehaviour {
     public AudioClip[] hitAudios;
     public GameObject hitParticlesPrefab;
 
-    public int shatterIndex = 0;
+    public int shatterIndex;
 
     private void Start() {
         
@@ -20,26 +20,51 @@ public class GloveScript : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag("CubeShatter")) {
-            var collisionPoint = other.ClosestPoint(transform.position);
-            GameObject gb = Instantiate(hitParticlesPrefab, collisionPoint, Quaternion.identity);
-            gb.GetComponent<ParticleSystem>().Play();
-            Destroy(gb, 1f);
-            Rigidbody rb = other.GetComponent<Rigidbody>();
-            Destroy(rb);
-            SendHapticFeedback();
-            PlayRandomHitSound();
-            gameManager.IncreaseScore();
-            other.gameObject.GetComponent<BoxCollider>().enabled = false;
-            other.gameObject.GetComponent<BoxMovement>().enabled = false;
-            other.gameObject.GetComponent<ShatterExplosion>().Explode(other.transform);
+            ExplodeCube(other);
         }
     }
 
-    // private void OnTriggerStay(Collider other) {
-    //     if (other.tag == "CubeDouble") {
-    //         ShatterExplosion se = gameObject.GetComponent<ShatterExplosion>();
-    //     }
-    // }
+    private void OnTriggerStay(Collider other) {
+        if (other.CompareTag("CubeDouble")) {
+            ShatterExplosion se = other.GetComponent<ShatterExplosion>();
+            se.explode[shatterIndex] = true;
+            if (other.gameObject.GetComponent<ShatterExplosion>().DoubleExplode(other.transform)) {
+                var collisionPoint = other.ClosestPoint(transform.position);
+                GameObject gb = Instantiate(hitParticlesPrefab, collisionPoint, Quaternion.identity);
+                gb.GetComponent<ParticleSystem>().Play();
+                Destroy(gb, 1f);
+                Rigidbody rb = other.GetComponent<Rigidbody>();
+                Destroy(rb);
+                SendHapticFeedback();
+                PlayRandomHitSound();
+                gameManager.IncreaseScore();
+            }
+        }
+        
+    }
+
+    private void OnTriggerExit(Collider other) {
+        if (other.CompareTag("CubeDouble")) {
+            ShatterExplosion se = other.GetComponent<ShatterExplosion>();
+            se.explode[shatterIndex] = false;
+        }
+    }
+
+    private void ExplodeCube(Collider other) {
+        var collisionPoint = other.ClosestPoint(transform.position);
+        GameObject gb = Instantiate(hitParticlesPrefab, collisionPoint, Quaternion.identity);
+        gb.GetComponent<ParticleSystem>().Play();
+        Destroy(gb, 1f);
+        Rigidbody rb = other.GetComponent<Rigidbody>();
+        Destroy(rb);
+        SendHapticFeedback();
+        PlayRandomHitSound();
+        gameManager.IncreaseScore();
+        other.gameObject.GetComponent<BoxCollider>().enabled = false;
+        other.gameObject.GetComponent<BoxMovement>().enabled = false;
+        other.gameObject.GetComponent<ShatterExplosion>().Explode(other.transform);
+    }
+    
 
     private void SendHapticFeedback() {
         controller.SendHapticImpulse(0.5f, 0.2f);
