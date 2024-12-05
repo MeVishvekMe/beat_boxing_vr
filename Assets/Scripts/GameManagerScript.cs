@@ -25,7 +25,7 @@ public class GameManagerScript : MonoBehaviour {
     private void UpdateScoreText() {
         StringBuilder sb = new StringBuilder();
         sb.Append(_score + "\n");
-        sb.Append("x" + _multiplier);
+        sb.Append("x" + _multiplier.ToString("F1"));  // Format multiplier to one decimal place
         scoreText.text = sb.ToString();
     }
     

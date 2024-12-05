@@ -3,47 +3,36 @@ using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class SpawnBox : MonoBehaviour {
+    // GameObject holding all the song's timestamps
+    public GameObject songTimeStampGameObject;
     
-    public AudioSource audioSource;
+    // Array of the TimeStampDS
+    private TimeStampDS[] timeStampDS;
     
-    public GameObject boxPrefab;
-    public GameObject doubleBoxPrefab;
+    // GameManagerScript object for updating scoreText
+    private GameManagerScript gameManagerScript;
 
-    public Vector2 spawnRangeX;    // Random range for X position
-    public Vector2 spawnRangeY;    // Random range for Y position
-    // public float targetZ = -8f;    // Target Z position
-    public float spawnZ = 5.5f;    // Initial spawn Z position
-    private float[] timestamps;  // Time when boxes should reach the target
-    private float[] doubleTimestamps;
-
-    public GameObject timeStampGameObject;
-    private int _currentIndex = 0;
-    private int _currentDoubleIndex = 0;
+    // AudioPlayer of the song
+    public AudioSource songAudioSource;
     
+    // Variable for iterating the TimeStamps
+    private int _currentStamp = 0;
+
     private void Start() {
-        timestamps = timeStampGameObject.GetComponent<GodishTimestamps>().ReturnTimeStampsArray();
-        doubleTimestamps = timeStampGameObject.GetComponent<GodishTimestamps>().ReturnDoubleTimeStampsArray();
+        // Initialization of the variables
+        gameManagerScript = GetComponent<GameManagerScript>();
+        timeStampDS = songTimeStampGameObject.GetComponent<UnityTimeStamps>().ReturnTimeStampArray();
     }
 
     private void Update() {
-        
-        if (audioSource.time >= timestamps[_currentIndex] - 2) {
-            SpawnBoxObject(boxPrefab);
-            _currentIndex++;
-        }
-
-        if (audioSource.time >= doubleTimestamps[_currentDoubleIndex] - 2) {
-            SpawnBoxObject(doubleBoxPrefab);
-            _currentDoubleIndex++;
+        Debug.Log(songAudioSource.time);
+        if (songAudioSource.time >= timeStampDS[_currentStamp].timeStamp - 2f) {
+            InsBox(timeStampDS[_currentStamp]);
+            _currentStamp++;
         }
     }
-    
-    
 
-    private void SpawnBoxObject(GameObject obj) {
-        float x = Random.Range(spawnRangeX.x, spawnRangeX.y);
-        float y = Random.Range(spawnRangeY.x, spawnRangeY.y);
-        GameObject box = Instantiate(obj, new Vector3(x, y, spawnZ), Quaternion.identity);
-        Destroy(box, 10f);
+    private void InsBox(TimeStampDS timeStamp) {
+        GameObject gb = Instantiate(timeStamp.spawnType, timeStamp.spawnPoint.position, Quaternion.identity);
     }
 }
