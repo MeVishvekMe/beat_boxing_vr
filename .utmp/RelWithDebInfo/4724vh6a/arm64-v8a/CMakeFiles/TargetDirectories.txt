@@ -1,0 +1,5 @@
+C:/beat_boxing_vr/.utmp/RelWithDebInfo/4724vh6a/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/beat_boxing_vr/.utmp/RelWithDebInfo/4724vh6a/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/beat_boxing_vr/.utmp/RelWithDebInfo/4724vh6a/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/beat_boxing_vr/.utmp/RelWithDebInfo/4724vh6a/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/beat_boxing_vr/.utmp/RelWithDebInfo/4724vh6a/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
