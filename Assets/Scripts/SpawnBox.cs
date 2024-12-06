@@ -25,7 +25,7 @@ public class SpawnBox : MonoBehaviour {
     }
 
     private void Update() {
-        Debug.Log(songAudioSource.time);
+        // Debug.Log(songAudioSource.time);
         if (songAudioSource.time >= timeStampDS[_currentStamp].timeStamp - 2f) {
             InsBox(timeStampDS[_currentStamp]);
             _currentStamp++;

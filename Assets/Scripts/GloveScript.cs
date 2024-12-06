@@ -14,18 +14,15 @@ public class GloveScript : MonoBehaviour {
 
     public int shatterIndex;
 
-    private void Start() {
-        
-    }
-
     private void OnTriggerEnter(Collider other) {
-        if (other.CompareTag("CubeShatter")) {
+        
+        if (other.CompareTag("CubeShatter") && GetComponent<FollowController>().GetSpeed() >= 1f) {
             ExplodeCube(other);
         }
     }
 
     private void OnTriggerStay(Collider other) {
-        if (other.CompareTag("CubeDouble")) {
+        if (other.CompareTag("CubeDouble") && GetComponent<FollowController>().GetSpeed() >= 1f) {
             ShatterExplosion se = other.GetComponent<ShatterExplosion>();
             se.explode[shatterIndex] = true;
             if (other.gameObject.GetComponent<ShatterExplosion>().DoubleExplode(other.transform)) {
