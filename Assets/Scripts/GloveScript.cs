@@ -11,11 +11,10 @@ public class GloveScript : MonoBehaviour {
 
     public AudioClip[] hitAudios;
     public GameObject hitParticlesPrefab;
-
+    
     public int shatterIndex;
 
     private void OnTriggerEnter(Collider other) {
-        
         if (other.CompareTag("CubeShatter") && GetComponent<FollowController>().GetSpeed() >= 1f) {
             ExplodeCube(other);
         }
