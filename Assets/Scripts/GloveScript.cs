@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.ProBuilder.MeshOperations;
 using UnityEngine.XR.Interaction.Toolkit.Inputs.Haptics;
+using Random = UnityEngine.Random;
 
 public class GloveScript : MonoBehaviour {
     public HapticImpulsePlayer controller;
@@ -10,7 +11,7 @@ public class GloveScript : MonoBehaviour {
     public AudioSource hitSoundAudioSource;
 
     public AudioClip[] hitAudios;
-    public GameObject hitParticlesPrefab;
+    public GameObject[] hitParticlesPrefab;
     
     public int shatterIndex;
 
@@ -26,7 +27,8 @@ public class GloveScript : MonoBehaviour {
             se.explode[shatterIndex] = true;
             if (other.gameObject.GetComponent<ShatterExplosion>().DoubleExplode(other.transform)) {
                 var collisionPoint = other.ClosestPoint(transform.position);
-                GameObject gb = Instantiate(hitParticlesPrefab, collisionPoint, Quaternion.identity);
+                int randomParticleEffectIndex = Random.Range(0, hitParticlesPrefab.Length);
+                GameObject gb = Instantiate(hitParticlesPrefab[randomParticleEffectIndex], collisionPoint, Quaternion.identity);
                 gb.GetComponent<ParticleSystem>().Play();
                 Destroy(gb, 1f);
                 Rigidbody rb = other.GetComponent<Rigidbody>();
@@ -48,7 +50,8 @@ public class GloveScript : MonoBehaviour {
 
     private void ExplodeCube(Collider other) {
         var collisionPoint = other.ClosestPoint(transform.position);
-        GameObject gb = Instantiate(hitParticlesPrefab, collisionPoint, Quaternion.identity);
+        int randomParticleEffectIndex = Random.Range(0, hitParticlesPrefab.Length);
+        GameObject gb = Instantiate(hitParticlesPrefab[randomParticleEffectIndex], collisionPoint, Quaternion.identity);
         gb.GetComponent<ParticleSystem>().Play();
         Destroy(gb, 1f);
         Rigidbody rb = other.GetComponent<Rigidbody>();

@@ -401,7 +401,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b1acdd9cf9129004288078a15b47aede, type: 3}
   - {fileID: 8300000, guid: d22437e560b18d04d8fb4e66ae0ee89d, type: 3}
   - {fileID: 8300000, guid: 10ce505cf4973c94bbf7db40e79dd70b, type: 3}
-  hitParticlesPrefab: {fileID: 5024009746357069194, guid: ec3f674830402cc45bce805cf6493db7, type: 3}
+  hitParticlesPrefab:
+  - {fileID: 5024009746357069194, guid: ec3f674830402cc45bce805cf6493db7, type: 3}
+  - {fileID: 2955623459812423943, guid: f5507a8c6a22c404ab324980c4e8a11b, type: 3}
+  - {fileID: 8443315704496310910, guid: 6ef35fa36e3a65043b2d800600204bdd, type: 3}
   shatterIndex: 0
 --- !u!135 &235713111
 SphereCollider:
@@ -945,7 +948,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b1acdd9cf9129004288078a15b47aede, type: 3}
   - {fileID: 8300000, guid: d22437e560b18d04d8fb4e66ae0ee89d, type: 3}
   - {fileID: 8300000, guid: 10ce505cf4973c94bbf7db40e79dd70b, type: 3}
-  hitParticlesPrefab: {fileID: 5024009746357069194, guid: ec3f674830402cc45bce805cf6493db7, type: 3}
+  hitParticlesPrefab:
+  - {fileID: 5024009746357069194, guid: ec3f674830402cc45bce805cf6493db7, type: 3}
+  - {fileID: 2955623459812423943, guid: f5507a8c6a22c404ab324980c4e8a11b, type: 3}
+  - {fileID: 8443315704496310910, guid: 6ef35fa36e3a65043b2d800600204bdd, type: 3}
   shatterIndex: 1
 --- !u!135 &846149535
 SphereCollider:
@@ -1510,7 +1516,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
