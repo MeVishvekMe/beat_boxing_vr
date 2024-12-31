@@ -6,7 +6,7 @@
 
 <p align="center">Try the latest build yourself -</p>
 <p align="center">
-  <a href="your-download-link" style="text-decoration: none; font-size: 18px;">Download Latest Build</a>
+  <a href="https://drive.google.com/drive/folders/1xYOmg42fnE7GSa2TLQWB7gG2ENfBPfM_?usp=sharing" style="text-decoration: none; font-size: 18px;">Download Latest Build</a>
 </p>
 
 ---
