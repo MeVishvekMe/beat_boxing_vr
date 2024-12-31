@@ -5,17 +5,17 @@ public class UnityTimeStamps : MonoBehaviour {
     public GameObject singleHitBoxPrefab;
     public GameObject doubleHitBoxPrefab;
     
-    // Spawn points of the boxes
-    public Transform pLeftLeft;
-    public Transform pRightRight;
-    public Transform pLeft;
-    public Transform pRight;
-    public Transform pMiddle;
-    public Transform pMiddle2;
+    // // Spawn points of the boxes
+    // public Transform pLeftLeft;
+    // public Transform pRightRight;
+    // public Transform pLeft;
+    // public Transform pRight;
+    // public Transform pMiddle;
+    // public Transform pMiddle2;
     public Transform[] spawnPointsArray = new Transform[6];
     
     // TimeStamp array
-    TimeStampDS[] timestamps = new TimeStampDS[102];
+    TimeStampDS[] timestamps = new TimeStampDS[97];
     
     // Method for returning the timestamp array
     public TimeStampDS[] ReturnTimeStampArray() {
@@ -24,12 +24,12 @@ public class UnityTimeStamps : MonoBehaviour {
 
     // Hard-coding values
     void Start() {
-        spawnPointsArray[0] = pLeftLeft;
-        spawnPointsArray[1] = pRightRight;
-        spawnPointsArray[2] = pLeft;
-        spawnPointsArray[3] = pRight;
-        spawnPointsArray[4] = pMiddle;
-        spawnPointsArray[5] = pMiddle2;
+        // spawnPointsArray[0] = pLeftLeft;
+        // spawnPointsArray[1] = pRightRight;
+        // spawnPointsArray[2] = pLeft;
+        // spawnPointsArray[3] = pRight;
+        // spawnPointsArray[4] = pMiddle;
+        // spawnPointsArray[5] = pMiddle2;
         
         timestamps[0] = new TimeStampDS(singleHitBoxPrefab, 4.20f, spawnPointsArray[2]); // 00:04:10
         timestamps[1] = new TimeStampDS(singleHitBoxPrefab, 4.20f, spawnPointsArray[3]); // 00:04:10
@@ -128,9 +128,5 @@ public class UnityTimeStamps : MonoBehaviour {
         timestamps[94] = new TimeStampDS(singleHitBoxPrefab, 53.34f, spawnPointsArray[1]); // 00:53:17
         timestamps[95] = new TimeStampDS(singleHitBoxPrefab, 53.62f, spawnPointsArray[3]); // 00:53:31
         timestamps[96] = new TimeStampDS(singleHitBoxPrefab, 53.92f, spawnPointsArray[5]); // 00:53:46
-
-
-
-
     }
 }
