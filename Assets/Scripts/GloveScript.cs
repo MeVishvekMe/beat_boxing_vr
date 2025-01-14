@@ -1,76 +1,89 @@
 using System;
 using UnityEngine;
-using UnityEngine.ProBuilder.MeshOperations;
 using UnityEngine.XR.Interaction.Toolkit.Inputs.Haptics;
 using Random = UnityEngine.Random;
 
 public class GloveScript : MonoBehaviour {
     public HapticImpulsePlayer controller;
-    
     public GameManagerScript gameManager;
     public AudioSource hitSoundAudioSource;
 
     public AudioClip[] hitAudios;
     public GameObject[] hitParticlesPrefab;
-    
+
     public int shatterIndex;
 
+    private FollowController followController;
+
+    private void Awake() {
+        followController = GetComponent<FollowController>();
+    }
+
     private void OnTriggerEnter(Collider other) {
-        if (other.CompareTag("CubeShatter") && GetComponent<FollowController>().GetSpeed() >= 1f) {
+        if (other.CompareTag("CubeShatter") && followController.GetSpeed() >= 1f) {
             ExplodeCube(other);
         }
     }
 
     private void OnTriggerStay(Collider other) {
-        if (other.CompareTag("CubeDouble") && GetComponent<FollowController>().GetSpeed() >= 1f) {
-            ShatterExplosion se = other.GetComponent<ShatterExplosion>();
-            se.explode[shatterIndex] = true;
-            if (other.gameObject.GetComponent<ShatterExplosion>().DoubleExplode(other.transform)) {
-                var collisionPoint = other.ClosestPoint(transform.position);
-                int randomParticleEffectIndex = Random.Range(0, hitParticlesPrefab.Length);
-                GameObject gb = Instantiate(hitParticlesPrefab[randomParticleEffectIndex], collisionPoint, Quaternion.identity);
-                gb.GetComponent<ParticleSystem>().Play();
-                Destroy(gb, 1f);
-                Rigidbody rb = other.GetComponent<Rigidbody>();
-                Destroy(rb);
-                SendHapticFeedback();
-                PlayRandomHitSound();
-                gameManager.IncreaseScore();
-            }
+        if (other.CompareTag("CubeDouble") && followController.GetSpeed() >= 1f) {
+            HandleCubeDoubleCollision(other);
         }
-        
     }
 
     private void OnTriggerExit(Collider other) {
         if (other.CompareTag("CubeDouble")) {
-            ShatterExplosion se = other.GetComponent<ShatterExplosion>();
-            se.explode[shatterIndex] = false;
+            var shatterExplosion = other.GetComponent<ShatterExplosion>();
+            shatterExplosion.explode[shatterIndex] = false;
+        }
+    }
+
+    private void HandleCubeDoubleCollision(Collider other) {
+        var shatterExplosion = other.GetComponent<ShatterExplosion>();
+        shatterExplosion.explode[shatterIndex] = true;
+
+        if (shatterExplosion.DoubleExplode(other.transform)) {
+            CreateParticleEffect(other);
+            DisableCubePhysics(other);
+            SendHapticFeedback();
+            PlayRandomHitSound();
+            gameManager.IncreaseScore();
         }
     }
 
     private void ExplodeCube(Collider other) {
-        var collisionPoint = other.ClosestPoint(transform.position);
-        int randomParticleEffectIndex = Random.Range(0, hitParticlesPrefab.Length);
-        GameObject gb = Instantiate(hitParticlesPrefab[randomParticleEffectIndex], collisionPoint, Quaternion.identity);
-        gb.GetComponent<ParticleSystem>().Play();
-        Destroy(gb, 1f);
-        Rigidbody rb = other.GetComponent<Rigidbody>();
-        Destroy(rb);
+        CreateParticleEffect(other);
+        DisableCubePhysics(other);
         SendHapticFeedback();
         PlayRandomHitSound();
         gameManager.IncreaseScore();
-        other.gameObject.GetComponent<BoxCollider>().enabled = false;
-        other.gameObject.GetComponent<BoxMovement>().enabled = false;
-        other.gameObject.GetComponent<ShatterExplosion>().Explode(other.transform);
+
+        var cube = other.gameObject;
+        cube.GetComponent<BoxCollider>().enabled = false;
+        cube.GetComponent<BoxMovement>().enabled = false;
+        cube.GetComponent<ShatterExplosion>().Explode(other.transform);
     }
-    
+
+    private void CreateParticleEffect(Collider other) {
+        var collisionPoint = other.ClosestPoint(transform.position);
+        int randomIndex = Random.Range(0, hitParticlesPrefab.Length);
+
+        var particleEffect = Instantiate(hitParticlesPrefab[randomIndex], collisionPoint, Quaternion.identity);
+        particleEffect.GetComponent<ParticleSystem>().Play();
+        Destroy(particleEffect, 1f);
+    }
+
+    private void DisableCubePhysics(Collider other) {
+        var rb = other.GetComponent<Rigidbody>();
+        if (rb != null) Destroy(rb);
+    }
 
     private void SendHapticFeedback() {
         controller.SendHapticImpulse(0.5f, 0.2f);
     }
 
     private void PlayRandomHitSound() {
-        hitSoundAudioSource.clip = hitAudios[UnityEngine.Random.Range(0, hitAudios.Length)];
+        hitSoundAudioSource.clip = hitAudios[Random.Range(0, hitAudios.Length)];
         hitSoundAudioSource.Play();
     }
 }
