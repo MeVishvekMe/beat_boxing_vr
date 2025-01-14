@@ -1,11 +1,12 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.XR.Interaction.Toolkit.Inputs.Haptics;
 using Random = UnityEngine.Random;
 
 public class GloveScript : MonoBehaviour {
     public HapticImpulsePlayer controller;
-    public GameManagerScript gameManager;
+    [FormerlySerializedAs("gameManager")] public ScoreManager scoreManager;
     public AudioSource hitSoundAudioSource;
 
     public AudioClip[] hitAudios;
@@ -47,7 +48,7 @@ public class GloveScript : MonoBehaviour {
             DisableCubePhysics(other);
             SendHapticFeedback();
             PlayRandomHitSound();
-            gameManager.IncreaseScore();
+            scoreManager.IncreaseScore();
         }
     }
 
@@ -56,7 +57,7 @@ public class GloveScript : MonoBehaviour {
         DisableCubePhysics(other);
         SendHapticFeedback();
         PlayRandomHitSound();
-        gameManager.IncreaseScore();
+        scoreManager.IncreaseScore();
 
         var cube = other.gameObject;
         cube.GetComponent<BoxCollider>().enabled = false;

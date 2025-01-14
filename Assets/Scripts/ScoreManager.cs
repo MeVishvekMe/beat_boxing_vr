@@ -2,7 +2,7 @@ using System.Text;
 using TMPro;
 using UnityEngine;
 
-public class GameManagerScript : MonoBehaviour {
+public class ScoreManager : MonoBehaviour {
     public TextMeshProUGUI scoreText;
     private int _score = 0;
     private float _multiplier = 1;

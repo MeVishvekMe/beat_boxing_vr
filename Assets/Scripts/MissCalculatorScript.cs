@@ -1,12 +1,13 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class MissCalculatorScript : MonoBehaviour {
     
-    public GameManagerScript gameManager;
+    [FormerlySerializedAs("gameManager")] public ScoreManager scoreManager;
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag("CubeShatter") || other.CompareTag("CubeDouble")) {
-            gameManager.ResetMultiplier();
+            scoreManager.ResetMultiplier();
             Destroy(other.gameObject);
         }
     }

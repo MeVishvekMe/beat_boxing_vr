@@ -9,7 +9,7 @@ public class SpawnBox : MonoBehaviour {
     private TimeStampDS[] timeStampDS;
     
     // GameManagerScript object for updating scoreText
-    private GameManagerScript gameManagerScript;
+    private ScoreManager scoreManager;
 
     // AudioPlayer of the song
     public AudioSource songAudioSource;
@@ -21,7 +21,7 @@ public class SpawnBox : MonoBehaviour {
     private void Start() {
         
         // Initialization of the variables
-        gameManagerScript = GetComponent<GameManagerScript>();
+        scoreManager = GetComponent<ScoreManager>();
         timeStampDS = songTimeStampGameObject.GetComponent<UnityTimeStamps>().ReturnTimeStampArray();
         
     }
