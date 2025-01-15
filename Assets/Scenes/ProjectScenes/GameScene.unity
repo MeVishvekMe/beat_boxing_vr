@@ -395,7 +395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 673370931}
-  gameManager: {fileID: 1687903716}
+  scoreManager: {fileID: 1687903716}
   hitSoundAudioSource: {fileID: 2055405443}
   hitAudios:
   - {fileID: 8300000, guid: b1acdd9cf9129004288078a15b47aede, type: 3}
@@ -784,6 +784,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 857851839}
+    - targetCorrespondingSourceObject: {fileID: 1767192433, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1417919636}
     - targetCorrespondingSourceObject: {fileID: 202364687, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 673370933}
@@ -794,6 +797,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 862858653}
   m_SourcePrefab: {fileID: 100100000, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+--- !u!1 &433278457 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1767192433, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 433278456}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &673370928 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 202364687, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
@@ -942,7 +950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 862858644}
-  gameManager: {fileID: 1687903716}
+  scoreManager: {fileID: 1687903716}
   hitSoundAudioSource: {fileID: 2055405443}
   hitAudios:
   - {fileID: 8300000, guid: b1acdd9cf9129004288078a15b47aede, type: 3}
@@ -1650,6 +1658,27 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
   m_PrefabInstance: {fileID: 433278456}
   m_PrefabAsset: {fileID: 0}
+--- !u!135 &1417919636
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433278457}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1431703108
 GameObject:
   m_ObjectHideFlags: 0
@@ -6733,7 +6762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f83a24dd27be80042bb1bd18b7e4f026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 1687903716}
+  scoreManager: {fileID: 1687903716}
 --- !u!54 &1587944923
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6911,6 +6940,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1687903716}
     - target: {fileID: 6400486844133774187, guid: fdacf95f74a60d94fb0fa7b15e9fed90, type: 3}
+      propertyPath: scoreManager
+      value: 
+      objectReference: {fileID: 1687903716}
+    - target: {fileID: 6400486844133774187, guid: fdacf95f74a60d94fb0fa7b15e9fed90, type: 3}
       propertyPath: hitSoundAudioSource
       value: 
       objectReference: {fileID: 2055405443}
@@ -6946,6 +6979,7 @@ GameObject:
   - component: {fileID: 1687903714}
   - component: {fileID: 1687903715}
   - component: {fileID: 1687903716}
+  - component: {fileID: 1687903717}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -6995,6 +7029,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1709707184}
+--- !u!114 &1687903717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687903713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6573add832194f145b1ee2641be80b5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1709707181
 GameObject:
   m_ObjectHideFlags: 0
@@ -17719,6 +17765,10 @@ PrefabInstance:
       objectReference: {fileID: 862858644}
     - target: {fileID: 6400486844133774187, guid: fdacf95f74a60d94fb0fa7b15e9fed90, type: 3}
       propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1687903716}
+    - target: {fileID: 6400486844133774187, guid: fdacf95f74a60d94fb0fa7b15e9fed90, type: 3}
+      propertyPath: scoreManager
       value: 
       objectReference: {fileID: 1687903716}
     - target: {fileID: 6400486844133774187, guid: fdacf95f74a60d94fb0fa7b15e9fed90, type: 3}

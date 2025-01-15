@@ -5,13 +5,6 @@ public class UnityTimeStamps : MonoBehaviour {
     public GameObject singleHitBoxPrefab;
     public GameObject doubleHitBoxPrefab;
     
-    // // Spawn points of the boxes
-    // public Transform pLeftLeft;
-    // public Transform pRightRight;
-    // public Transform pLeft;
-    // public Transform pRight;
-    // public Transform pMiddle;
-    // public Transform pMiddle2;
     public Transform[] spawnPointsArray = new Transform[6];
     
     // TimeStamp array
@@ -24,13 +17,6 @@ public class UnityTimeStamps : MonoBehaviour {
 
     // Hard-coding values
     void Start() {
-        // spawnPointsArray[0] = pLeftLeft;
-        // spawnPointsArray[1] = pRightRight;
-        // spawnPointsArray[2] = pLeft;
-        // spawnPointsArray[3] = pRight;
-        // spawnPointsArray[4] = pMiddle;
-        // spawnPointsArray[5] = pMiddle2;
-        
         timestamps[0] = new TimeStampDS(singleHitBoxPrefab, 4.20f, spawnPointsArray[2]); // 00:04:10
         timestamps[1] = new TimeStampDS(singleHitBoxPrefab, 4.20f, spawnPointsArray[3]); // 00:04:10
         timestamps[2] = new TimeStampDS(singleHitBoxPrefab, 4.78f, spawnPointsArray[0]); // 00:04:39
