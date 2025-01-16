@@ -1,7 +1,7 @@
 <h1 align="center">Beat Boxing VR</h1>
 
 <p align="center">
-  <img src="Assets/GameplayGIF.gif" alt="Gameplay Demo" width="600">
+  <img src="GameplayGIF.gif" alt="Gameplay Demo" width="600">
 </p>
 
 <p align="center">Try the latest build yourself -</p>
