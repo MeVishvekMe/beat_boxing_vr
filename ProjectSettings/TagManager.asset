@@ -7,6 +7,7 @@ TagManager:
   - Anchor
   - CubeShatter
   - CubeDouble
+  - DodgeObject
   layers:
   - Default
   - TransparentFX
