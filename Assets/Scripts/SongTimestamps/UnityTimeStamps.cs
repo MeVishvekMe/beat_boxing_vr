@@ -4,6 +4,7 @@ public class UnityTimeStamps : MonoBehaviour {
     // Types of spawn boxes
     public GameObject singleHitBoxPrefab;
     public GameObject doubleHitBoxPrefab;
+    public GameObject dodgeObject;
     
     public Transform[] spawnPointsArray = new Transform[6];
     
