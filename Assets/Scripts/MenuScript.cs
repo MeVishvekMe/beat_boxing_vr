@@ -45,4 +45,12 @@ public class MenuScript : MonoBehaviour {
             yield return null;
         }
     }
+
+    public void ExitGame() {
+        // Display a log message in the Unity Editor (useful for debugging in Editor mode)
+        Debug.Log("Exiting game...");
+
+        Application.Quit();
+    }
+
 }

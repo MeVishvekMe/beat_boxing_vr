@@ -12,8 +12,12 @@ public class CameraHitBehaviour : MonoBehaviour {
         if (other.CompareTag("DodgeObject")) {
             Destroy(other.gameObject);
             scoreManager.ResetMultiplier();
-            StartCoroutine(HitVisualAnimation());
+            HitVisualStart();
         }
+    }
+
+    public void HitVisualStart() {
+        StartCoroutine(HitVisualAnimation());
     }
 
     IEnumerator HitVisualAnimation() {
