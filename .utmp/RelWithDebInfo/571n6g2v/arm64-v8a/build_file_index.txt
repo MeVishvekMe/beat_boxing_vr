@@ -1,0 +1,2 @@
+C:\Users\ARVRLab_2\Desktop\VR_beatBoxing\beat_boxing_vr\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+C:\Users\ARVRLab_2\Desktop\VR_beatBoxing\beat_boxing_vr\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt

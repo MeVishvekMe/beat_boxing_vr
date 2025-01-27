@@ -1,0 +1,10 @@
+# ninja log v5
+24	1924	7596623086680166	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	3241cb38a01ef509
+8	1983	7596623087348836	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	f1c7b372868d248b
+58	2003	7596623087471277	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	3a36cbbfde36a168
+33	2103	7596623088533404	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	99f44e165e544f93
+48	2138	7596623088861309	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	9080d2e8aba24899
+15	2232	7596623089846842	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	8f5b491381ffe857
+40	2412	7596623091674094	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	6d91a850c4e55b6c
+1	2596	7596623093455250	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	13bc4b6e2da52d01
+2597	2804	7596623095581425	C:/Users/ARVRLab_2/Desktop/VR_beatBoxing/beat_boxing_vr/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/571n6g2v/obj/arm64-v8a/libgame.so	44b46c3f825d419a

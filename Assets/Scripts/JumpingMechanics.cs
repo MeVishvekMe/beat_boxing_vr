@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class JumpingMechanics : MonoBehaviour {
@@ -19,7 +18,6 @@ public class JumpingMechanics : MonoBehaviour {
     private void CalculatePlayerLocalHeight() {
         playerHeight = transform.localPosition.y;
     }
-
 
     public float GetCurrentPlayerHeight() {
         return currentHeight;

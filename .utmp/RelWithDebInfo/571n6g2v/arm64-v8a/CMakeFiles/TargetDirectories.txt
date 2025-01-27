@@ -1,0 +1,5 @@
+C:/Users/ARVRLab_2/Desktop/VR_beatBoxing/beat_boxing_vr/.utmp/RelWithDebInfo/571n6g2v/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/ARVRLab_2/Desktop/VR_beatBoxing/beat_boxing_vr/.utmp/RelWithDebInfo/571n6g2v/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/Users/ARVRLab_2/Desktop/VR_beatBoxing/beat_boxing_vr/.utmp/RelWithDebInfo/571n6g2v/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/Users/ARVRLab_2/Desktop/VR_beatBoxing/beat_boxing_vr/.utmp/RelWithDebInfo/571n6g2v/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/Users/ARVRLab_2/Desktop/VR_beatBoxing/beat_boxing_vr/.utmp/RelWithDebInfo/571n6g2v/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
