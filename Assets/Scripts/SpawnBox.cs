@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -23,8 +24,22 @@ public class SpawnBox : MonoBehaviour {
         // Initialization of the variables
         scoreManager = GetComponent<ScoreManager>();
         timeStampDS = songTimeStampGameObject.GetComponent<UnityTimeStamps>().ReturnTimeStampArray();
-        
+        UserInputHandler.Instance.pauseButtonEvent += PauseAudioPlayer;
+        UserInputHandler.Instance.resumeButtonEvent += ResumeAudioPlayer;
     }
+
+    private void PauseAudioPlayer(object sender, EventArgs e) {
+        if (stopPlaying) return;
+        songAudioSource.Pause();
+        stopPlaying = true;
+    }
+
+    private void ResumeAudioPlayer(object sender, EventArgs e) {
+        if (!stopPlaying) return;
+        songAudioSource.Play();
+        stopPlaying = false;
+    }
+
 
     private void Update() {
         if (!stopPlaying && songAudioSource.time >= timeStampDS[_currentStamp].timeStamp - 2f) {

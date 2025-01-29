@@ -1532,6 +1532,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "B Button",
+                    "type": "Button",
+                    "id": "6050c85c-44d7-45af-90f9-29e554a355b3",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1945,7 +1954,7 @@
                 {
                     "name": "",
                     "id": "f1ff1a59-2983-4ef4-a811-326eb32f3861",
-                    "path": "<QuestTouchPlusController>{RightHand}/primaryButton",
+                    "path": "<OculusTouchController>/primaryButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -1972,6 +1981,39 @@
                     "processors": "",
                     "groups": "",
                     "action": "A Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "721c86a8-55f5-4f6e-8a7f-5c8c0cf18425",
+                    "path": "<XRInputV1::Oculus::OculusTouchControllerOpenXR>/secondarybutton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "B Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b1fece93-b799-4442-8f02-c63c6e46f131",
+                    "path": "<XRInputV1::Oculus::OculusTouchControllerOpenXR>{RightHand}/secondarybutton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "B Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "eb141234-8ff6-4d24-9345-673c4b2901e0",
+                    "path": "<XRController>/{SecondaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "B Button",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

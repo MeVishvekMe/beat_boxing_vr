@@ -4,10 +4,11 @@ Shader "Unlit/SkyboxShaderURP"
     {
         _Cubemap("Cubemap", Cube) = "" {}
         _Rotation("Rotation", Float) = 0.0
+        _Exposure("Exposure", Float) = 1.0
     }
     SubShader
     {
-        Tags { "RenderType"="Opaque" "RenderPipeline"="UniversalRenderPipeline" }
+        Tags { "RenderType"="Opaque" "RenderPipeline"="UniversalRenderPipeline" "IgnoreProjector"="True" }
         LOD 100
 
         Pass
@@ -20,6 +21,7 @@ Shader "Unlit/SkyboxShaderURP"
             TEXTURECUBE(_Cubemap);
             SAMPLER(sampler_Cubemap);
             float _Rotation;
+            float _Exposure;
 
             struct Attributes
             {
@@ -50,7 +52,9 @@ Shader "Unlit/SkyboxShaderURP"
                     dir.y * cosTheta - dir.z * sinTheta,
                     dir.y * sinTheta + dir.z * cosTheta
                 );
-                return SAMPLE_TEXTURECUBE(_Cubemap, sampler_Cubemap, rotatedDir);
+                half4 color = SAMPLE_TEXTURECUBE(_Cubemap, sampler_Cubemap, rotatedDir);
+                color.rgb *= _Exposure; // Apply exposure
+                return color;
             }
             ENDHLSL
         }

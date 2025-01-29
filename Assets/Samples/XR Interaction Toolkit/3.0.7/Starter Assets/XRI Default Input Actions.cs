@@ -1554,6 +1554,15 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""B Button"",
+                    ""type"": ""Button"",
+                    ""id"": ""6050c85c-44d7-45af-90f9-29e554a355b3"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -1967,7 +1976,7 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
                 {
                     ""name"": """",
                     ""id"": ""f1ff1a59-2983-4ef4-a811-326eb32f3861"",
-                    ""path"": ""<QuestTouchPlusController>{RightHand}/primaryButton"",
+                    ""path"": ""<OculusTouchController>/primaryButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -1994,6 +2003,39 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""A Button"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""721c86a8-55f5-4f6e-8a7f-5c8c0cf18425"",
+                    ""path"": ""<XRInputV1::Oculus::OculusTouchControllerOpenXR>/secondarybutton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""B Button"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b1fece93-b799-4442-8f02-c63c6e46f131"",
+                    ""path"": ""<XRInputV1::Oculus::OculusTouchControllerOpenXR>{RightHand}/secondarybutton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""B Button"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""eb141234-8ff6-4d24-9345-673c4b2901e0"",
+                    ""path"": ""<XRController>/{SecondaryButton}"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""B Button"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -3446,6 +3488,7 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
         m_XRIRight_GripRotation = m_XRIRight.FindAction("Grip Rotation", throwIfNotFound: true);
         m_XRIRight_Thumbstick = m_XRIRight.FindAction("Thumbstick", throwIfNotFound: true);
         m_XRIRight_AButton = m_XRIRight.FindAction("A Button", throwIfNotFound: true);
+        m_XRIRight_BButton = m_XRIRight.FindAction("B Button", throwIfNotFound: true);
         // XRI Right Interaction
         m_XRIRightInteraction = asset.FindActionMap("XRI Right Interaction", throwIfNotFound: true);
         m_XRIRightInteraction_Select = m_XRIRightInteraction.FindAction("Select", throwIfNotFound: true);
@@ -4051,6 +4094,7 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
     private readonly InputAction m_XRIRight_GripRotation;
     private readonly InputAction m_XRIRight_Thumbstick;
     private readonly InputAction m_XRIRight_AButton;
+    private readonly InputAction m_XRIRight_BButton;
     public struct XRIRightActions
     {
         private @XRIDefaultInputActions m_Wrapper;
@@ -4070,6 +4114,7 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
         public InputAction @GripRotation => m_Wrapper.m_XRIRight_GripRotation;
         public InputAction @Thumbstick => m_Wrapper.m_XRIRight_Thumbstick;
         public InputAction @AButton => m_Wrapper.m_XRIRight_AButton;
+        public InputAction @BButton => m_Wrapper.m_XRIRight_BButton;
         public InputActionMap Get() { return m_Wrapper.m_XRIRight; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -4124,6 +4169,9 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
             @AButton.started += instance.OnAButton;
             @AButton.performed += instance.OnAButton;
             @AButton.canceled += instance.OnAButton;
+            @BButton.started += instance.OnBButton;
+            @BButton.performed += instance.OnBButton;
+            @BButton.canceled += instance.OnBButton;
         }
 
         private void UnregisterCallbacks(IXRIRightActions instance)
@@ -4173,6 +4221,9 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
             @AButton.started -= instance.OnAButton;
             @AButton.performed -= instance.OnAButton;
             @AButton.canceled -= instance.OnAButton;
+            @BButton.started -= instance.OnBButton;
+            @BButton.performed -= instance.OnBButton;
+            @BButton.canceled -= instance.OnBButton;
         }
 
         public void RemoveCallbacks(IXRIRightActions instance)
@@ -4699,6 +4750,7 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
         void OnGripRotation(InputAction.CallbackContext context);
         void OnThumbstick(InputAction.CallbackContext context);
         void OnAButton(InputAction.CallbackContext context);
+        void OnBButton(InputAction.CallbackContext context);
     }
     public interface IXRIRightInteractionActions
     {
