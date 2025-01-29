@@ -30,16 +30,17 @@ public class Main {
                 float time = minutes * 60 + seconds + milliseconds / 100.0f;
                 String formattedTime = String.format("%.2f", time);
                 String color = extractColor(list.get(lineCounter + 1));
-                if(color.equals("Blue")) {
-                    writer.write("timestamps[" + arrayCounter + "] = new TimeStampDS(singleHitBoxPrefab, " + formattedTime + "f, spawnPointsArray[0]); // " + timeString + "\n");
+                if(color.equals("Red")) {
+                    writer.write("timestamps[" + arrayCounter + "] = new TimeStampDS(jumpObject, " + formattedTime + "f, spawnPointsArray[6]); // " + timeString + "\n");
                 }
                 else if(color.equals("Green")) {
                     writer.write("timestamps[" + arrayCounter + "] = new TimeStampDS(doubleHitBoxPrefab, " + formattedTime + "f, spawnPointsArray[0]); // " + timeString + "\n");
                 }
-                else if(color.equals("Red")) {
+                else if(color.equals("Blue")) {
                     writer.write("timestamps[" + arrayCounter + "] = new TimeStampDS(singleHitBoxPrefab, " + formattedTime + "f, spawnPointsArray[0]); // " + timeString + "\n");
-                    arrayCounter++;
-                    writer.write("timestamps[" + arrayCounter + "] = new TimeStampDS(singleHitBoxPrefab, " + formattedTime + "f, spawnPointsArray[0]); // " + timeString + "\n");
+                }
+                else if(color.equals("Pink")) {
+                    writer.write("timestamps[" + arrayCounter + "] = new TimeStampDS(dodgeObject, " + formattedTime + "f, spawnPointsArray[0]); // " + timeString + "\n");
                 }
                 arrayCounter++;
                 lineCounter += 3;

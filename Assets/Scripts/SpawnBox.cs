@@ -23,7 +23,7 @@ public class SpawnBox : MonoBehaviour {
         
         // Initialization of the variables
         scoreManager = GetComponent<ScoreManager>();
-        timeStampDS = songTimeStampGameObject.GetComponent<UnityTimeStamps>().ReturnTimeStampArray();
+        timeStampDS = songTimeStampGameObject.GetComponent<BassHouseTimestamps>().ReturnTimeStampArray();
         UserInputHandler.Instance.pauseButtonEvent += PauseAudioPlayer;
         UserInputHandler.Instance.resumeButtonEvent += ResumeAudioPlayer;
     }
