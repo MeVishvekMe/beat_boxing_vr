@@ -8,7 +8,7 @@ Shader "Unlit/SkyboxShaderURP"
     }
     SubShader
     {
-        Tags { "RenderType"="Opaque" "RenderPipeline"="UniversalRenderPipeline" "IgnoreProjector"="True" }
+        Tags { "Queue"="Background" "RenderType"="Background" "RenderPipeline"="UniversalRenderPipeline" }
         LOD 100
 
         Pass
@@ -19,7 +19,7 @@ Shader "Unlit/SkyboxShaderURP"
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
 
             TEXTURECUBE(_Cubemap);
-            SAMPLER(sampler_Cubemap);
+            SAMPLER(sampler_linear_clamp);
             float _Rotation;
             float _Exposure;
 
@@ -37,22 +37,26 @@ Shader "Unlit/SkyboxShaderURP"
             Varyings vert(Attributes IN)
             {
                 Varyings OUT;
-                OUT.positionHCS = TransformObjectToHClip(IN.positionOS.xyz);
-                OUT.worldPos = TransformObjectToWorld(IN.positionOS.xyz);
+                VertexPositionInputs vertexInput = GetVertexPositionInputs(IN.positionOS.xyz);
+                OUT.positionHCS = vertexInput.positionCS; 
+                OUT.worldPos = vertexInput.positionWS; 
                 return OUT;
             }
 
             half4 frag(Varyings IN) : SV_Target
             {
                 float3 dir = normalize(IN.worldPos);
-                float sinTheta, cosTheta;
-                sincos(_Rotation, sinTheta, cosTheta);
+
+                // Correct X-axis rotation for vertical movement
+                float2 sincosTheta;
+                sincos(radians(_Rotation), sincosTheta.x, sincosTheta.y);
                 float3 rotatedDir = float3(
                     dir.x,
-                    dir.y * cosTheta - dir.z * sinTheta,
-                    dir.y * sinTheta + dir.z * cosTheta
+                    dir.y * sincosTheta.y - dir.z * sincosTheta.x, // Rotate vertically
+                    dir.y * sincosTheta.x + dir.z * sincosTheta.y
                 );
-                half4 color = SAMPLE_TEXTURECUBE(_Cubemap, sampler_Cubemap, rotatedDir);
+
+                half4 color = SAMPLE_TEXTURECUBE(_Cubemap, sampler_linear_clamp, rotatedDir);
                 color.rgb *= _Exposure; // Apply exposure
                 return color;
             }
