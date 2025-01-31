@@ -11002,8 +11002,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: aa449e69d71e4714f8d9762dc71ecaab, type: 3}
-  m_Resource: {fileID: 8300000, guid: aa449e69d71e4714f8d9762dc71ecaab, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3cdf9028f4a50c4498877be0a06bfa05, type: 3}
+  m_Resource: {fileID: 8300000, guid: 3cdf9028f4a50c4498877be0a06bfa05, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -11256,7 +11256,7 @@ Transform:
   m_GameObject: {fileID: 1026053117}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.3, y: 1.5, z: 0}
+  m_LocalPosition: {x: 0.1, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11287,7 +11287,7 @@ Transform:
   m_GameObject: {fileID: 1165965741}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.3, y: 1.5, z: 0}
+  m_LocalPosition: {x: -0.1, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11435,6 +11435,7 @@ GameObject:
   - component: {fileID: 1295010363}
   - component: {fileID: 1295010364}
   - component: {fileID: 1295010365}
+  - component: {fileID: 1295010366}
   m_Layer: 0
   m_Name: TimeStampsSongsGameObject
   m_TagString: Untagged
@@ -11486,15 +11487,44 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1295010361}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b79254cff404ba42aeedbf7449e56b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  singleHitBoxPrefab: {fileID: 3421255345719884216, guid: e008ea5f08af317458658a35f9c76e89, type: 3}
+  singleHitBoxPrefab: {fileID: 675713944239358772, guid: 4822e8bd382cf4e47812d03cd2d26662, type: 3}
   doubleHitBoxPrefab: {fileID: 3421255345719884216, guid: d7252082a2142f34e953c92a3fac9c87, type: 3}
   dodgeObject: {fileID: 8506930720135689531, guid: f7b0e506b8a353a4eb0a95f0e349cc58, type: 3}
   jumpObject: {fileID: 5586278514242143624, guid: cfd9de314a7a6f649982d5730a53b45e, type: 3}
+  spawnPointsArray:
+  - {fileID: 1912319518}
+  - {fileID: 723712316}
+  - {fileID: 1165965742}
+  - {fileID: 1026053118}
+  - {fileID: 13326596}
+  - {fileID: 59945411}
+  - {fileID: 1623642036}
+--- !u!114 &1295010366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295010361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed683de7d0ea95f4b950f1ae5fd92960, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  singleHitBoxPrefab: {fileID: 3421255345719884216, guid: b874ae3e2d5bde94aa103abd30ebb0d6, type: 3}
+  doubleHitBoxPrefab: {fileID: 3421255345719884216, guid: d7252082a2142f34e953c92a3fac9c87, type: 3}
+  dodgeObject: {fileID: 8506930720135689531, guid: f7b0e506b8a353a4eb0a95f0e349cc58, type: 3}
+  jumpObject: {fileID: 5586278514242143624, guid: cfd9de314a7a6f649982d5730a53b45e, type: 3}
+  tutorialSingleLeftHitBoxPrefab: {fileID: 3421255345719884216, guid: e008ea5f08af317458658a35f9c76e89, type: 3}
+  tutorialSingleRightHitBoxPrefab: {fileID: 3421255345719884216, guid: 61da7031ba48bb34284248e0b0b4e837, type: 3}
+  tutorialDoubleHitBoxPrefab: {fileID: 3421255345719884216, guid: a270f1627fd5c6c44bb38e80a1c46bce, type: 3}
+  tutorialDodgeObject: {fileID: 8506930720135689531, guid: e92b7d1c62f482245bd5200ae098e092, type: 3}
+  tutorialJumpObject: {fileID: 5586278514242143624, guid: 9d081df9600dd024f9a7484cb86d97ea, type: 3}
   spawnPointsArray:
   - {fileID: 1912319518}
   - {fileID: 723712316}

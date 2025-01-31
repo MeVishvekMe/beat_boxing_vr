@@ -9,7 +9,7 @@ public class TutorialObjectScript : MonoBehaviour {
 
     IEnumerator CheckForStopPosition() {
         while (true) {
-            if (transform.position.z <= -7.8f) {
+            if (transform.position.z <= -7.3f) {
                 GameStateHandler.GamePause();
                 break;
             }

@@ -1,0 +1,72 @@
+001  001      V     C        00:00:02:12 00:00:02:13 00:00:02:12 00:00:02:13  
+ |C:ResolveColorBlue |M:Marker 1 |D:1
+
+002  001      V     C        00:00:05:34 00:00:05:35 00:00:05:34 00:00:05:35  
+ |C:ResolveColorBlue |M:Marker 2 |D:1
+
+003  001      V     C        00:00:08:22 00:00:08:23 00:00:08:22 00:00:08:23  
+ |C:ResolveColorBlue |M:Marker 3 |D:1
+
+004  001      V     C        00:00:09:24 00:00:09:25 00:00:09:24 00:00:09:25  
+ |C:ResolveColorBlue |M:Marker 4 |D:1
+
+005  001      V     C        00:00:11:12 00:00:11:13 00:00:11:12 00:00:11:13  
+ |C:ResolveColorBlue |M:Marker 7 |D:1
+
+006  001      V     C        00:00:13:16 00:00:13:17 00:00:13:16 00:00:13:17  
+ |C:ResolveColorBlue |M:Marker 8 |D:1
+
+007  001      V     C        00:00:16:40 00:00:16:41 00:00:16:40 00:00:16:41  
+ |C:ResolveColorGreen |M:Marker 5 |D:1
+
+008  001      V     C        00:00:19:26 00:00:19:27 00:00:19:26 00:00:19:27  
+ |C:ResolveColorGreen |M:Marker 6 |D:1
+
+009  001      V     C        00:00:22:12 00:00:22:13 00:00:22:12 00:00:22:13  
+ |C:ResolveColorGreen |M:Marker 9 |D:1
+
+010  001      V     C        00:00:24:32 00:00:24:33 00:00:24:32 00:00:24:33  
+ |C:ResolveColorGreen |M:Marker 10 |D:1
+
+011  001      V     C        00:00:26:35 00:00:26:36 00:00:26:35 00:00:26:36  
+ |C:ResolveColorBlue |M:Marker 11 |D:1
+
+012  001      V     C        00:00:29:26 00:00:29:27 00:00:29:26 00:00:29:27  
+ |C:ResolveColorBlue |M:Marker 12 |D:1
+
+013  001      V     C        00:00:33:03 00:00:33:04 00:00:33:03 00:00:33:04  
+ |C:ResolveColorPink |M:Marker 13 |D:1
+
+014  001      V     C        00:00:35:20 00:00:35:21 00:00:35:20 00:00:35:21  
+ |C:ResolveColorPink |M:Marker 14 |D:1
+
+015  001      V     C        00:00:38:40 00:00:38:41 00:00:38:40 00:00:38:41  
+ |C:ResolveColorPink |M:Marker 15 |D:1
+
+016  001      V     C        00:00:44:17 00:00:44:18 00:00:44:17 00:00:44:18  
+ |C:ResolveColorRed |M:Marker 16 |D:1
+
+017  001      V     C        00:00:47:05 00:00:47:06 00:00:47:05 00:00:47:06  
+ |C:ResolveColorGreen |M:Marker 17 |D:1
+
+018  001      V     C        00:00:49:41 00:00:49:42 00:00:49:41 00:00:49:42  
+ |C:ResolveColorRed |M:Marker 18 |D:1
+
+019  001      V     C        00:00:55:18 00:00:55:19 00:00:55:18 00:00:55:19  
+ |C:ResolveColorBlue |M:Marker 19 |D:1
+
+020  001      V     C        00:00:58:03 00:00:58:04 00:00:58:03 00:00:58:04  
+ |C:ResolveColorBlue |M:Marker 20 |D:1
+
+021  001      V     C        00:01:00:44 00:01:00:45 00:01:00:44 00:01:00:45  
+ |C:ResolveColorBlue |M:Marker 21 |D:1
+
+022  001      V     C        00:01:02:10 00:01:02:11 00:01:02:10 00:01:02:11  
+ |C:ResolveColorBlue |M:Marker 22 |D:1
+
+023  001      V     C        00:01:03:28 00:01:03:29 00:01:03:28 00:01:03:29  
+ |C:ResolveColorBlue |M:Marker 23 |D:1
+
+024  001      V     C        00:01:04:45 00:01:04:46 00:01:04:45 00:01:04:46  
+ |C:ResolveColorBlue |M:Marker 24 |D:1
+
