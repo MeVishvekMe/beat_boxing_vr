@@ -37,10 +37,10 @@ public class DemoSongTimeStamps : MonoBehaviour {
         timestamps[8] = new TimeStampDS(doubleHitBoxPrefab, 22.24f, spawnPointsArray[4]); // 00:22:12
         timestamps[9] = new TimeStampDS(doubleHitBoxPrefab, 24.64f, spawnPointsArray[5]); // 00:24:32
         timestamps[10] = new TimeStampDS(singleHitBoxPrefab, 26.70f, spawnPointsArray[0]); // 00:26:35
-        timestamps[11] = new TimeStampDS(singleHitBoxPrefab, 29.52f, spawnPointsArray[0]); // 00:29:26
-        timestamps[12] = new TimeStampDS(tutorialDodgeObject, 33.06f, spawnPointsArray[0]); // 00:33:03
+        timestamps[11] = new TimeStampDS(singleHitBoxPrefab, 29.52f, spawnPointsArray[4]); // 00:29:26
+        timestamps[12] = new TimeStampDS(tutorialDodgeObject, 33.06f, spawnPointsArray[3]); // 00:33:03
         timestamps[13] = new TimeStampDS(tutorialDodgeObject, 35.40f, spawnPointsArray[0]); // 00:35:20
-        timestamps[14] = new TimeStampDS(tutorialDodgeObject, 38.80f, spawnPointsArray[0]); // 00:38:40
+        timestamps[14] = new TimeStampDS(tutorialDodgeObject, 38.80f, spawnPointsArray[1]); // 00:38:40
         timestamps[15] = new TimeStampDS(tutorialJumpObject, 44.34f, spawnPointsArray[6]); // 00:44:17
         timestamps[16] = new TimeStampDS(doubleHitBoxPrefab, 47.10f, spawnPointsArray[4]); // 00:47:05
         timestamps[17] = new TimeStampDS(tutorialJumpObject, 49.82f, spawnPointsArray[6]); // 00:49:41
