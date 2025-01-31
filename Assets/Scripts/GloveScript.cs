@@ -22,12 +22,20 @@ public class GloveScript : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag("CubeShatter") && followController.GetSpeed() >= 1f) {
+            TutorialObjectScript tutorialObjectScript = other.GetComponent<TutorialObjectScript>();
+            if (tutorialObjectScript != null) {
+                GameStateHandler.GameResume();
+            }
             ExplodeCube(other);
         }
     }
 
     private void OnTriggerStay(Collider other) {
         if (other.CompareTag("CubeDouble") && followController.GetSpeed() >= 1f) {
+            TutorialObjectScript tutorialObjectScript = other.GetComponent<TutorialObjectScript>();
+            if (tutorialObjectScript != null) {
+                GameStateHandler.GameResume();
+            }
             HandleCubeDoubleCollision(other);
         }
     }

@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using System.Collections;
 
 public class BoxMovement : MonoBehaviour {
     private Rigidbody _rb;

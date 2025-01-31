@@ -8,6 +8,7 @@ TagManager:
   - CubeShatter
   - CubeDouble
   - DodgeObject
+  - Glove
   layers:
   - Default
   - TransparentFX

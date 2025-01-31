@@ -34,11 +34,20 @@ public class UserInputHandler : MonoBehaviour {
     }
 
     private void AButtonOnPerformed(InputAction.CallbackContext obj) {
-        pauseButtonEvent?.Invoke(this, EventArgs.Empty);
+        PauseEventFire();
     }
 
     private void BButtonOnPerformed(InputAction.CallbackContext obj) {
+        ResumeEventFire();
+    }
+
+    public void PauseEventFire() {
+        pauseButtonEvent?.Invoke(this, EventArgs.Empty);
+    }
+
+    public void ResumeEventFire() {
         resumeButtonEvent?.Invoke(this, EventArgs.Empty);
+        Debug.Log("EventFired");
     }
     
 }
