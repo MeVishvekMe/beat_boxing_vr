@@ -40,5 +40,6 @@ public class ShatterExplosion : MonoBehaviour {
             // Apply an explosion force
             childRB.AddExplosionForce(60f, explodePoint.position, 2f);
         }
+        Destroy(gameObject, 2f);
     }
 }
