@@ -88,7 +88,7 @@ public class GloveScript : MonoBehaviour {
     }
 
     private void SendHapticFeedback() {
-        controller.SendHapticImpulse(0.5f, 0.2f);
+        controller.SendHapticImpulse(1f, 0.2f);
     }
 
     private void PlayRandomHitSound() {
