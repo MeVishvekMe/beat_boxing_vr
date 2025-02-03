@@ -395,6 +395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 673370931}
+  otherController: {fileID: 846149534}
   scoreManager: {fileID: 1687903716}
   hitSoundAudioSource: {fileID: 2055405443}
   hitAudios:
@@ -10783,6 +10784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 862858644}
+  otherController: {fileID: 235713110}
   scoreManager: {fileID: 1687903716}
   hitSoundAudioSource: {fileID: 2055405443}
   hitAudios:

@@ -6,6 +6,7 @@ using Random = UnityEngine.Random;
 
 public class GloveScript : MonoBehaviour {
     public HapticImpulsePlayer controller;
+    public GloveScript otherController;
     [FormerlySerializedAs("gameManager")] public ScoreManager scoreManager;
     public AudioSource hitSoundAudioSource;
 
@@ -53,8 +54,10 @@ public class GloveScript : MonoBehaviour {
 
         if (shatterExplosion.DoubleExplode(other.transform)) {
             CreateParticleEffect(other);
+            otherController.CreateParticleEffect(other);
             DisableCubePhysics(other);
             SendHapticFeedback();
+            otherController.SendHapticFeedback();
             PlayRandomHitSound();
             scoreManager.IncreaseScore();
         }
@@ -73,7 +76,7 @@ public class GloveScript : MonoBehaviour {
         cube.GetComponent<ShatterExplosion>().Explode(other.transform);
     }
 
-    private void CreateParticleEffect(Collider other) {
+    public void CreateParticleEffect(Collider other) {
         var collisionPoint = other.ClosestPoint(transform.position);
         int randomIndex = Random.Range(0, hitParticlesPrefab.Length);
 
@@ -87,7 +90,7 @@ public class GloveScript : MonoBehaviour {
         if (rb != null) Destroy(rb);
     }
 
-    private void SendHapticFeedback() {
+    public void SendHapticFeedback() {
         controller.SendHapticImpulse(1f, 0.2f);
     }
 
