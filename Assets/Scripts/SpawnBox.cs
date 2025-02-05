@@ -19,8 +19,9 @@ public class SpawnBox : MonoBehaviour {
     private int _currentStamp = 0;
     private bool stopPlaying = false;
 
+    [SerializeField] private GameEndingHandler gameEndingHandler;
+
     private void Start() {
-        
         // Initialization of the variables
         scoreManager = GetComponent<ScoreManager>();
         timeStampDS = songTimeStampGameObject.GetComponent<DemoSongTimeStamps>().ReturnTimeStampArray();
@@ -47,7 +48,7 @@ public class SpawnBox : MonoBehaviour {
             _currentStamp++;
             if (_currentStamp == timeStampDS.Length) {
                 stopPlaying = true;
-                Invoke("ChangeScene", 2f);
+                gameEndingHandler.EndScreen();
             }
         }
     }

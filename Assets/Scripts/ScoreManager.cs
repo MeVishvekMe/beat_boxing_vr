@@ -10,6 +10,10 @@ public class ScoreManager : MonoBehaviour {
     void Start() {
         UpdateScoreText();
     }
+
+    public int GetScore() {
+        return _score;
+    }
     
     public void IncreaseScore() {
         _multiplier += 0.1f;

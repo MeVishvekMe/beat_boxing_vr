@@ -7,7 +7,7 @@ public class MissCalculatorScript : MonoBehaviour {
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag("CubeShatter") || other.CompareTag("CubeDouble")) {
             Camera.main.GetComponent<CameraHitBehaviour>().HitVisualStart();
-            scoreManager.ResetMultiplier();
+            // scoreManager.ResetMultiplier();
             Destroy(other.gameObject);
         }
     }
