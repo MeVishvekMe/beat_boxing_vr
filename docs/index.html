@@ -3,80 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beatboxing VR Game</title>
+    <title>BeatBoxing VR - Rhythm Combat Game</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            text-align: center;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
         }
+
+        body {
+            background: linear-gradient(135deg, #000428, #004e92);
+            color: white;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
         header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
+            text-align: center;
+            padding: 4rem 0;
+            position: relative;
         }
-        main {
-            padding: 20px;
+
+        .neon-title {
+            font-size: 4rem;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 0 0 10px #00ffff,
+                         0 0 20px #00ffff,
+                         0 0 30px #00ffff;
+            animation: pulse 2s infinite;
         }
-        img {
-            width: 80%;
-            max-width: 600px;
-            margin: 10px 0;
+
+        @keyframes pulse {
+            0% { text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; }
+            50% { text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff; }
+            100% { text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; }
         }
-        video {
-            width: 80%;
-            max-width: 600px;
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+            margin: 4rem 0;
         }
-        .download-button {
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-image {
+            flex: 1;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+
+        .feature-card {
+            background: rgba(0, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+        }
+
+        .cta-button {
             display: inline-block;
-            padding: 10px 20px;
-            background-color: #28a745;
-            color: white;
+            padding: 1rem 2rem;
+            background: white;
+            color: #000428;
             text-decoration: none;
-            font-size: 18px;
-            border-radius: 5px;
-            margin-top: 20px;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+            margin-top: 1rem;
         }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+        }
+
         footer {
-            margin-top: 20px;
-            background-color: #333;
-            color: white;
-            padding: 10px;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            border-top: 1px solid rgba(0, 255, 255, 0.2);
         }
     </style>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            document.querySelector(".download-button").addEventListener("click", function () {
-                alert("Your download will start shortly!");
-            });
-        });
-    </script>
 </head>
 <body>
-    <header>
-        <h1>Beatboxing VR Game</h1>
-        <p>Experience the rhythm in virtual reality!</p>
-    </header>
-    <main>
-        <section id="content">
-            <h2>About the Game</h2>
-            <p>Immerse yourself in a VR beatboxing experience where rhythm and skill meet technology.</p>
-            <h2>Screenshots</h2>
-            <img src="assets/screenshot1.jpg" alt="Gameplay Screenshot 1">
-            <img src="assets/screenshot2.jpg" alt="Gameplay Screenshot 2">
-            <h2>Gameplay Video</h2>
-            <video controls>
-                <source src="assets/gameplay.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <h2>Download</h2>
-            <a href="assets/beatboxing_vr_game.zip" class="download-button">Download Now</a>
+    <div class="container">
+        <header>
+            <h1 class="neon-title">BeatBoxing VR</h1>
+            <!-- <p>Enter the rhythm. Become the beat.</p> -->
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Master the Rhythm, Rule the Grid</h2>
+                <p>CyberBeat is an intense rhythm-based combat game where your moves sync with the beat. Slash, dodge, and flow through neon-lit arenas in this immersive VR experience.</p>
+                <a href="#" class="cta-button">Download Now</a>
+            </div>
+            <img src="/api/placeholder/600/400" alt="Game Screenshot" class="hero-image">
         </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Beatboxing VR. All rights reserved.</p>
-    </footer>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3>Dynamic Gameplay</h3>
+                <p>React to the beat with precision timing. Every song creates a unique combat sequence, challenging your reflexes and rhythm.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Custom Tracks</h3>
+                <p>Import your own music and let our AI generate exciting level layouts. Your favorite songs become thrilling battle arenas.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Multiplayer Modes</h3>
+                <p>Challenge friends in real-time duels or compete on global leaderboards. Show off your skills and climb the ranks.</p>
+            </div>
+        </section>
+
+        <section class="hero">
+            <img src="/api/placeholder/600/400" alt="Gameplay Preview" class="hero-image">
+            <div class="hero-content">
+                <h2>Revolutionary VR Controls</h2>
+                <p>Designed specifically for VR, CyberBeat puts you in control with intuitive motion controls and haptic feedback. Feel every beat as you slice through targets and dodge obstacles.</p>
+                <a href="#" class="cta-button">Watch Trailer</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025 CyberBeat. All rights reserved.</p>
+            <a href="#" class="cta-button">Join Our Discord</a>
+        </footer>
+    </div>
 </body>
 </html>
