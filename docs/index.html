@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beatboxing VR Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        main {
+            padding: 20px;
+        }
+        img {
+            width: 80%;
+            max-width: 600px;
+            margin: 10px 0;
+        }
+        video {
+            width: 80%;
+            max-width: 600px;
+        }
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        footer {
+            margin-top: 20px;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector(".download-button").addEventListener("click", function () {
+                alert("Your download will start shortly!");
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Beatboxing VR Game</h1>
+        <p>Experience the rhythm in virtual reality!</p>
+    </header>
+    <main>
+        <section id="content">
+            <h2>About the Game</h2>
+            <p>Immerse yourself in a VR beatboxing experience where rhythm and skill meet technology.</p>
+            <h2>Screenshots</h2>
+            <img src="assets/screenshot1.jpg" alt="Gameplay Screenshot 1">
+            <img src="assets/screenshot2.jpg" alt="Gameplay Screenshot 2">
+            <h2>Gameplay Video</h2>
+            <video controls>
+                <source src="assets/gameplay.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>Download</h2>
+            <a href="assets/beatboxing_vr_game.zip" class="download-button">Download Now</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Beatboxing VR. All rights reserved.</p>
+    </footer>
+</body>
+</html>
