@@ -4,21 +4,37 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class MenuScript : MonoBehaviour {
-    
-    public GameObject exitButton;
-    public GameObject playButton;
+    public GameObject calibrationScreen;
+    public GameObject playAndExitScreen;
+    public GameObject difficultyScreen;
     public Slider progressSlider;
+
+    
     
     public void StartGameSceneLoading() {
-        // Start the asynchronous scene loading
-        exitButton.SetActive(false);
-        playButton.SetActive(false);
         progressSlider.gameObject.SetActive(true);
         StartCoroutine(LoadSceneAsync(1)); // Replace '1' with your build index
     }
 
-    private IEnumerator LoadSceneAsync(int sceneIndex)
-    {
+    public void SetPlayerHeight() {
+        PlayerHeight.SetPlayerHeight();
+        calibrationScreen.SetActive(false);
+        playAndExitScreen.SetActive(true);
+    }
+
+    public void Play() {
+        playAndExitScreen.SetActive(false);
+        difficultyScreen.SetActive(true);
+    }
+
+    public void SelectLevel(int index) {
+        LevelSelectorHelper.selectedSongIndex = index;
+        difficultyScreen.SetActive(false);
+        StartGameSceneLoading();
+    }
+    
+    
+    private IEnumerator LoadSceneAsync(int sceneIndex) {
         // Start loading the scene asynchronously
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
 
