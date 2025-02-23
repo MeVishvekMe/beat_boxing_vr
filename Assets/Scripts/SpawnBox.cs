@@ -30,15 +30,23 @@ public class SpawnBox : MonoBehaviour {
         UserInputHandler.Instance.pauseButtonEvent += PauseAudioPlayer;
         UserInputHandler.Instance.resumeButtonEvent += ResumeAudioPlayer;
     }
+    
+    private void OnDestroy() {
+        if (UserInputHandler.Instance != null) { 
+            UserInputHandler.Instance.pauseButtonEvent -= PauseAudioPlayer;
+            UserInputHandler.Instance.resumeButtonEvent -= ResumeAudioPlayer;
+        }
+    }
+
 
     private void PauseAudioPlayer(object sender, EventArgs e) {
-        if (stopPlaying) return;
+        if (stopPlaying || songAudioSource == null) return;
         songAudioSource.Pause();
         stopPlaying = true;
     }
 
     private void ResumeAudioPlayer(object sender, EventArgs e) {
-        if (!stopPlaying) return;
+        if (!stopPlaying || songAudioSource == null) return;
         songAudioSource.Play();
         stopPlaying = false;
     }
@@ -49,6 +57,7 @@ public class SpawnBox : MonoBehaviour {
             InsBox(timeStampDS[_currentStamp]);
             _currentStamp++;
             if (_currentStamp == timeStampDS.Length) {
+                Debug.Log("Limit");
                 stopPlaying = true;
                 gameEndingHandler.EndScreen();
             }

@@ -13,7 +13,9 @@ public class LevelSelectorHelper : MonoBehaviour {
             audioSource = GameObject.FindWithTag("Player").GetComponent<AudioSource>();
         }
         songs.Add(GetComponent<DemoSongTimeStamps>());
+        songs.Add(GetComponent<EasySongTimeStamps>());
         songs.Add(GetComponent<MediumSongTimeStamps>());
+        songs.Add(GetComponent<HardSongTimeStamps>());
         audioSource.clip = audioClips[selectedSongIndex];
         audioSource.Play();
     }

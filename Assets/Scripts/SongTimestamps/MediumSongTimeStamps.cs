@@ -1,8 +1,7 @@
-using System;
-using UnityEngine;
+
 
 public class MediumSongTimeStamps : SongTimestamps {
-    TimeStampDS[] timestamps = new TimeStampDS[10];
+    TimeStampDS[] timestamps = new TimeStampDS[437];
     
     // Method for returning the timestamp array
     public override TimeStampDS[] ReturnTimeStampArray() {

@@ -18,16 +18,22 @@ public class UserInputHandler : MonoBehaviour {
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
-        xriDefaultInputActions = new XRIDefaultInputActions();
+        xriDefaultInputActions = new XRIDefaultInputActions(); // Ensure it's initialized
     }
 
     private void OnEnable() {
+        if (xriDefaultInputActions == null) {
+            xriDefaultInputActions = new XRIDefaultInputActions(); // Reinitialize if null
+        }
+
         xriDefaultInputActions.Enable();
         xriDefaultInputActions.XRIRight.AButton.performed += AButtonOnPerformed;
         xriDefaultInputActions.XRIRight.BButton.performed += BButtonOnPerformed;
     }
 
     private void OnDisable() {
+        if (xriDefaultInputActions == null) return; // Prevent NullReferenceException
+
         xriDefaultInputActions.XRIRight.AButton.performed -= AButtonOnPerformed;
         xriDefaultInputActions.XRIRight.BButton.performed -= BButtonOnPerformed;
         xriDefaultInputActions.Disable();
@@ -48,5 +54,4 @@ public class UserInputHandler : MonoBehaviour {
     public void ResumeEventFire() {
         resumeButtonEvent?.Invoke(this, EventArgs.Empty);
     }
-    
 }
