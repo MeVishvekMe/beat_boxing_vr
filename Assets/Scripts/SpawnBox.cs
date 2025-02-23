@@ -25,7 +25,6 @@ public class SpawnBox : MonoBehaviour {
         // Initialization of the variables
         scoreManager = GetComponent<ScoreManager>();
         // timeStampDS = songTimeStampGameObject.GetComponent<DemoSongTimeStamps>().ReturnTimeStampArray();
-        Debug.Log(LevelSelectorHelper.songs);
         timeStampDS = LevelSelectorHelper.songs[LevelSelectorHelper.selectedSongIndex].ReturnTimeStampArray();
         Debug.Log(timeStampDS[_currentStamp].timeStamp);
         UserInputHandler.Instance.pauseButtonEvent += PauseAudioPlayer;

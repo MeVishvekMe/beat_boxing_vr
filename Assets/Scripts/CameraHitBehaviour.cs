@@ -10,7 +10,6 @@ public class CameraHitBehaviour : MonoBehaviour {
     
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag("DodgeObject")) {
-            Debug.Log("Collider hit");
             Destroy(other.gameObject);
             HitVisualStart();
         }
@@ -22,7 +21,6 @@ public class CameraHitBehaviour : MonoBehaviour {
     }
 
     IEnumerator HitVisualAnimation() {
-        Debug.Log("Dodge object hit");
         objectHitVisual.gameObject.SetActive(true);
 
         // Get the current color of the image

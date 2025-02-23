@@ -140,6 +140,5 @@ public class DemoSongTimeStamps : SongTimestamps {
         timestamps[127] = new TimeStampDS(dodgeObject, 208.22f, spawnPointsArray[6]); // 03:28:11
         timestamps[128] = new TimeStampDS(dodgeObject, 209.84f, spawnPointsArray[2]); // 03:29:42
         timestamps[129] = new TimeStampDS(doubleHitBoxPrefab, 213.08f, spawnPointsArray[5]); // 03:33:04
-
     }
 }

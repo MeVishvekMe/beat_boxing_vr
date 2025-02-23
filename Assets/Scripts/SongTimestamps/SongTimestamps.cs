@@ -15,7 +15,7 @@ public abstract class SongTimestamps : MonoBehaviour {
     public GameObject tutorialDoubleHitBoxPrefab;
     public GameObject tutorialDodgeObject;
     public GameObject tutorialJumpObject;
-
+    
     public Transform[] spawnPointsArray = new Transform[7];
 
     public abstract TimeStampDS[] ReturnTimeStampArray();

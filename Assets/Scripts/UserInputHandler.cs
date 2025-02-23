@@ -47,7 +47,6 @@ public class UserInputHandler : MonoBehaviour {
 
     public void ResumeEventFire() {
         resumeButtonEvent?.Invoke(this, EventArgs.Empty);
-        Debug.Log("EventFired");
     }
     
 }

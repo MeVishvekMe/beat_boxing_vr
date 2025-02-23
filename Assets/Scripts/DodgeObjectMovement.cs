@@ -32,7 +32,6 @@ public class DodgeObjectMovement : MonoBehaviour {
         Vector3 cameraPosition = Camera.main.transform.position;
         float displacement = Vector3.Distance(cameraPosition, startingPosition);
         float speed = displacement / 2f;
-        Debug.Log(speed);
         return (cameraPosition - startingPosition).normalized * speed;
     }
 }

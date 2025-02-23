@@ -8,7 +8,6 @@ public class GameStateHandler : MonoBehaviour {
     }
     
     public static void GameResume() {
-        
         UserInputHandler.Instance.ResumeEventFire();
     }
 }
