@@ -144,11 +144,11 @@ public class EasySongTimeStamps : SongTimestamps {
         timestamps[131] = new TimeStampDS(dodgeObject, 226.10f, spawnPointsArray[3]); // 03:46:05
         timestamps[132] = new TimeStampDS(singleHitBoxPrefab, 227.66f, spawnPointsArray[0]); // 03:47:33
         timestamps[133] = new TimeStampDS(singleHitBoxPrefab, 228.00f, spawnPointsArray[1]); // 03:48:00
-        timestamps[134] = new TimeStampDS(dodgeObject, 229.58f, spawnPointsArray[2]); // 03:49:29
+        timestamps[134] = new TimeStampDS(new GameObject(), 229.58f, spawnPointsArray[2]); // 03:49:29
         timestamps[135] = new TimeStampDS(jumpObject, 229.92f, spawnPointsArray[6]); // 03:49:46
         timestamps[136] = new TimeStampDS(singleHitBoxPrefab, 231.40f, spawnPointsArray[2]); // 03:51:20
         timestamps[137] = new TimeStampDS(singleHitBoxPrefab, 231.76f, spawnPointsArray[3]); // 03:51:38
-        timestamps[138] = new TimeStampDS(dodgeObject, 232.38f, spawnPointsArray[3]); // 03:52:19
+        timestamps[138] = new TimeStampDS(new GameObject(), 232.38f, spawnPointsArray[3]); // 03:52:19
         timestamps[139] = new TimeStampDS(jumpObject, 232.70f, spawnPointsArray[6]); // 03:52:35
         timestamps[140] = new TimeStampDS(singleHitBoxPrefab, 240.88f, spawnPointsArray[2]); // 04:00:44
         timestamps[141] = new TimeStampDS(singleHitBoxPrefab, 242.90f, spawnPointsArray[3]); // 04:02:45
@@ -160,7 +160,7 @@ public class EasySongTimeStamps : SongTimestamps {
         timestamps[147] = new TimeStampDS(doubleHitBoxPrefab, 252.34f, spawnPointsArray[2]); // 04:12:17
         timestamps[148] = new TimeStampDS(doubleHitBoxPrefab, 254.20f, spawnPointsArray[3]); // 04:14:10
         timestamps[149] = new TimeStampDS(doubleHitBoxPrefab, 255.20f, spawnPointsArray[4]); // 04:15:10
-        timestamps[150] = new TimeStampDS(dodgeObject, 255.78f, spawnPointsArray[0]); // 04:15:39
+        timestamps[150] = new TimeStampDS(new GameObject(), 255.78f, spawnPointsArray[0]); // 04:15:39
         timestamps[151] = new TimeStampDS(dodgeObject, 256.08f, spawnPointsArray[1]); // 04:16:04
         timestamps[152] = new TimeStampDS(singleHitBoxPrefab, 257.66f, spawnPointsArray[0]); // 04:17:33
         timestamps[153] = new TimeStampDS(singleHitBoxPrefab, 258.00f, spawnPointsArray[1]); // 04:18:00
@@ -172,10 +172,10 @@ public class EasySongTimeStamps : SongTimestamps {
         timestamps[159] = new TimeStampDS(singleHitBoxPrefab, 262.82f, spawnPointsArray[3]); // 04:22:41
         timestamps[160] = new TimeStampDS(jumpObject, 263.28f, spawnPointsArray[6]); // 04:23:14
         timestamps[161] = new TimeStampDS(doubleHitBoxPrefab, 263.78f, spawnPointsArray[4]); // 04:23:39
-        timestamps[162] = new TimeStampDS(dodgeObject, 264.24f, spawnPointsArray[2]); // 04:24:12
+        timestamps[162] = new TimeStampDS(new GameObject(), 264.24f, spawnPointsArray[2]); // 04:24:12
         timestamps[163] = new TimeStampDS(dodgeObject, 264.78f, spawnPointsArray[3]); // 04:24:39
         timestamps[164] = new TimeStampDS(doubleHitBoxPrefab, 265.30f, spawnPointsArray[4]); // 04:25:15
-        timestamps[165] = new TimeStampDS(dodgeObject, 266.10f, spawnPointsArray[2]); // 04:26:05
+        timestamps[165] = new TimeStampDS(new GameObject(), 266.10f, spawnPointsArray[2]); // 04:26:05
         timestamps[166] = new TimeStampDS(jumpObject, 266.58f, spawnPointsArray[6]); // 04:26:29
         timestamps[167] = new TimeStampDS(singleHitBoxPrefab, 267.08f, spawnPointsArray[0]); // 04:27:04
         timestamps[168] = new TimeStampDS(singleHitBoxPrefab, 267.52f, spawnPointsArray[1]); // 04:27:26
@@ -208,7 +208,7 @@ public class EasySongTimeStamps : SongTimestamps {
         timestamps[195] = new TimeStampDS(jumpObject, 287.80f, spawnPointsArray[6]); // 04:47:40
         timestamps[196] = new TimeStampDS(singleHitBoxPrefab, 288.70f, spawnPointsArray[2]); // 04:48:35
         timestamps[197] = new TimeStampDS(singleHitBoxPrefab, 289.18f, spawnPointsArray[3]); // 04:49:09
-        timestamps[198] = new TimeStampDS(dodgeObject, 289.68f, spawnPointsArray[2]); // 04:49:34
+        timestamps[198] = new TimeStampDS(new GameObject(), 289.68f, spawnPointsArray[2]); // 04:49:34
         timestamps[199] = new TimeStampDS(dodgeObject, 291.08f, spawnPointsArray[3]); // 04:51:04
         timestamps[200] = new TimeStampDS(singleHitBoxPrefab, 293.40f, spawnPointsArray[0]); // 04:53:20
         timestamps[201] = new TimeStampDS(singleHitBoxPrefab, 294.82f, spawnPointsArray[1]); // 04:54:41
