@@ -1,0 +1,8 @@
+timestamps[0] = new TimeStampDS(singleHitBoxPrefab, 6.22, spawnPointsArray[0]);
+timestamps[1] = new TimeStampDS(dodgeObject, 12.68, spawnPointsArray[1]);
+timestamps[2] = new TimeStampDS(doubleHitBoxPrefab, 20.76, spawnPointsArray[2]);
+timestamps[3] = new TimeStampDS(singleHitBoxPrefab, 26.2, spawnPointsArray[3]);
+timestamps[4] = new TimeStampDS(jumpObject, 30.6, spawnPointsArray[6]);
+timestamps[5] = new TimeStampDS(singleHitBoxPrefab, 39.14, spawnPointsArray[4]);
+timestamps[6] = new TimeStampDS(singleHitBoxPrefab, 18.96, spawnPointsArray[5]);
+timestamps[7] = new TimeStampDS(singleHitBoxPrefab, 31.52, spawnPointsArray[5]);
