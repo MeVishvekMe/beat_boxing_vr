@@ -1,4 +1,6 @@
 public class HardSongTimeStamps : SongTimestamps {
+    private ObjectReferencesTimeStampDS objectReferencesTimeStampDS;
+    
     TimeStampDS[] timestamps = new TimeStampDS[672];
     
     // Method for returning the timestamp array
@@ -7,6 +9,18 @@ public class HardSongTimeStamps : SongTimestamps {
     }
 
     private void Start() {
+        objectReferencesTimeStampDS = GetComponent<ObjectReferencesTimeStampDS>();
+        singleHitBoxPrefab = objectReferencesTimeStampDS.singleHitBoxPrefab;
+        doubleHitBoxPrefab = objectReferencesTimeStampDS.doubleHitBoxPrefab;
+        dodgeObject = objectReferencesTimeStampDS.dodgeObject;
+        jumpObject = objectReferencesTimeStampDS.jumpObject;
+        tutorialSingleLeftHitBoxPrefab = objectReferencesTimeStampDS.tutorialSingleLeftHitBoxPrefab;
+        tutorialSingleRightHitBoxPrefab = objectReferencesTimeStampDS.tutorialSingleRightHitBoxPrefab;
+        tutorialDoubleHitBoxPrefab = objectReferencesTimeStampDS.tutorialDoubleHitBoxPrefab;
+        tutorialDodgeObject = objectReferencesTimeStampDS.tutorialDodgeObject;
+        tutorialJumpObject = objectReferencesTimeStampDS.tutorialDodgeObject;
+        spawnPointsArray = objectReferencesTimeStampDS.spawnPointsArray;
+        
         timestamps[0] = new TimeStampDS(doubleHitBoxPrefab, 11.18f, spawnPointsArray[4]); // 00:11:09
         timestamps[1] = new TimeStampDS(dodgeObject, 12.58f, spawnPointsArray[5]); // 00:12:29
         timestamps[2] = new TimeStampDS(singleHitBoxPrefab, 14.62f, spawnPointsArray[0]); // 00:14:31

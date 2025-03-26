@@ -21941,10 +21941,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1295010363}
-  - component: {fileID: 1295010366}
+  - component: {fileID: 1295010372}
+  - component: {fileID: 1295010371}
   - component: {fileID: 1295010370}
-  - component: {fileID: 1295010368}
   - component: {fileID: 1295010369}
+  - component: {fileID: 1295010368}
   - component: {fileID: 1295010367}
   m_Layer: 0
   m_Name: TimeStampsSongsGameObject
@@ -21968,35 +21969,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1295010366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1295010361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed683de7d0ea95f4b950f1ae5fd92960, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  singleHitBoxPrefab: {fileID: 3421255345719884216, guid: b874ae3e2d5bde94aa103abd30ebb0d6, type: 3}
-  doubleHitBoxPrefab: {fileID: 3421255345719884216, guid: d7252082a2142f34e953c92a3fac9c87, type: 3}
-  dodgeObject: {fileID: 8506930720135689531, guid: f7b0e506b8a353a4eb0a95f0e349cc58, type: 3}
-  jumpObject: {fileID: 5586278514242143624, guid: cfd9de314a7a6f649982d5730a53b45e, type: 3}
-  tutorialSingleLeftHitBoxPrefab: {fileID: 3421255345719884216, guid: e008ea5f08af317458658a35f9c76e89, type: 3}
-  tutorialSingleRightHitBoxPrefab: {fileID: 3421255345719884216, guid: 61da7031ba48bb34284248e0b0b4e837, type: 3}
-  tutorialDoubleHitBoxPrefab: {fileID: 3421255345719884216, guid: a270f1627fd5c6c44bb38e80a1c46bce, type: 3}
-  tutorialDodgeObject: {fileID: 8506930720135689531, guid: e92b7d1c62f482245bd5200ae098e092, type: 3}
-  tutorialJumpObject: {fileID: 5586278514242143624, guid: 9d081df9600dd024f9a7484cb86d97ea, type: 3}
-  spawnPointsArray:
-  - {fileID: 98154180056739905, guid: 9b69c1909b82ffb4eb8dfad1bbd61092, type: 3}
-  - {fileID: 305965350430492808, guid: 8bcb3716f4066fb44813595796a5e0be, type: 3}
-  - {fileID: 755654639484263360, guid: 0d5c6f731f745dd48a121ec09669e257, type: 3}
-  - {fileID: 8562992034041927546, guid: 6ddfaee4fbe2b19478f8b697d4cadd4e, type: 3}
-  - {fileID: 6553656602559191602, guid: 23da18c889cfaaa4dbbabc5ddbd06c9e, type: 3}
-  - {fileID: 5273964928652627063, guid: 0dfe8b671ab41ef428949d0a3d0d6386, type: 3}
-  - {fileID: 8905521359409511058, guid: 6ddfb1804a077f94fbd49bfe6c6f2be3, type: 3}
 --- !u!114 &1295010367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22024,26 +21996,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1295010361}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bd5d4b0867ae8746b55108c6f2e3c12, type: 3}
+  m_Script: {fileID: 11500000, guid: 8cf261b5f7315114d8dfa30ba843cdbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  singleHitBoxPrefab: {fileID: 3421255345719884216, guid: b874ae3e2d5bde94aa103abd30ebb0d6, type: 3}
-  doubleHitBoxPrefab: {fileID: 3421255345719884216, guid: d7252082a2142f34e953c92a3fac9c87, type: 3}
-  dodgeObject: {fileID: 8506930720135689531, guid: f7b0e506b8a353a4eb0a95f0e349cc58, type: 3}
-  jumpObject: {fileID: 5586278514242143624, guid: cfd9de314a7a6f649982d5730a53b45e, type: 3}
-  tutorialSingleLeftHitBoxPrefab: {fileID: 3421255345719884216, guid: e008ea5f08af317458658a35f9c76e89, type: 3}
-  tutorialSingleRightHitBoxPrefab: {fileID: 3421255345719884216, guid: 61da7031ba48bb34284248e0b0b4e837, type: 3}
-  tutorialDoubleHitBoxPrefab: {fileID: 3421255345719884216, guid: a270f1627fd5c6c44bb38e80a1c46bce, type: 3}
-  tutorialDodgeObject: {fileID: 8506930720135689531, guid: e92b7d1c62f482245bd5200ae098e092, type: 3}
-  tutorialJumpObject: {fileID: 5586278514242143624, guid: 9d081df9600dd024f9a7484cb86d97ea, type: 3}
+  singleHitBoxPrefab: {fileID: 0}
+  doubleHitBoxPrefab: {fileID: 0}
+  dodgeObject: {fileID: 0}
+  jumpObject: {fileID: 0}
+  tutorialSingleLeftHitBoxPrefab: {fileID: 0}
+  tutorialSingleRightHitBoxPrefab: {fileID: 0}
+  tutorialDoubleHitBoxPrefab: {fileID: 0}
+  tutorialDodgeObject: {fileID: 0}
+  tutorialJumpObject: {fileID: 0}
   spawnPointsArray:
-  - {fileID: 98154180056739905, guid: 9b69c1909b82ffb4eb8dfad1bbd61092, type: 3}
-  - {fileID: 305965350430492808, guid: 8bcb3716f4066fb44813595796a5e0be, type: 3}
-  - {fileID: 755654639484263360, guid: 0d5c6f731f745dd48a121ec09669e257, type: 3}
-  - {fileID: 8562992034041927546, guid: 6ddfaee4fbe2b19478f8b697d4cadd4e, type: 3}
-  - {fileID: 6553656602559191602, guid: 23da18c889cfaaa4dbbabc5ddbd06c9e, type: 3}
-  - {fileID: 5273964928652627063, guid: 0dfe8b671ab41ef428949d0a3d0d6386, type: 3}
-  - {fileID: 8905521359409511058, guid: 6ddfb1804a077f94fbd49bfe6c6f2be3, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1295010369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22053,26 +22025,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1295010361}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cf261b5f7315114d8dfa30ba843cdbf, type: 3}
+  m_Script: {fileID: 11500000, guid: 1bd5d4b0867ae8746b55108c6f2e3c12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  singleHitBoxPrefab: {fileID: 3421255345719884216, guid: b874ae3e2d5bde94aa103abd30ebb0d6, type: 3}
-  doubleHitBoxPrefab: {fileID: 3421255345719884216, guid: d7252082a2142f34e953c92a3fac9c87, type: 3}
-  dodgeObject: {fileID: 8506930720135689531, guid: f7b0e506b8a353a4eb0a95f0e349cc58, type: 3}
-  jumpObject: {fileID: 5586278514242143624, guid: cfd9de314a7a6f649982d5730a53b45e, type: 3}
-  tutorialSingleLeftHitBoxPrefab: {fileID: 3421255345719884216, guid: e008ea5f08af317458658a35f9c76e89, type: 3}
-  tutorialSingleRightHitBoxPrefab: {fileID: 3421255345719884216, guid: 61da7031ba48bb34284248e0b0b4e837, type: 3}
-  tutorialDoubleHitBoxPrefab: {fileID: 3421255345719884216, guid: a270f1627fd5c6c44bb38e80a1c46bce, type: 3}
-  tutorialDodgeObject: {fileID: 8506930720135689531, guid: e92b7d1c62f482245bd5200ae098e092, type: 3}
-  tutorialJumpObject: {fileID: 5586278514242143624, guid: 9d081df9600dd024f9a7484cb86d97ea, type: 3}
+  singleHitBoxPrefab: {fileID: 0}
+  doubleHitBoxPrefab: {fileID: 0}
+  dodgeObject: {fileID: 0}
+  jumpObject: {fileID: 0}
+  tutorialSingleLeftHitBoxPrefab: {fileID: 0}
+  tutorialSingleRightHitBoxPrefab: {fileID: 0}
+  tutorialDoubleHitBoxPrefab: {fileID: 0}
+  tutorialDodgeObject: {fileID: 0}
+  tutorialJumpObject: {fileID: 0}
   spawnPointsArray:
-  - {fileID: 98154180056739905, guid: 9b69c1909b82ffb4eb8dfad1bbd61092, type: 3}
-  - {fileID: 305965350430492808, guid: 8bcb3716f4066fb44813595796a5e0be, type: 3}
-  - {fileID: 755654639484263360, guid: 0d5c6f731f745dd48a121ec09669e257, type: 3}
-  - {fileID: 8562992034041927546, guid: 6ddfaee4fbe2b19478f8b697d4cadd4e, type: 3}
-  - {fileID: 6553656602559191602, guid: 23da18c889cfaaa4dbbabc5ddbd06c9e, type: 3}
-  - {fileID: 5273964928652627063, guid: 0dfe8b671ab41ef428949d0a3d0d6386, type: 3}
-  - {fileID: 8905521359409511058, guid: 6ddfb1804a077f94fbd49bfe6c6f2be3, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1295010370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22083,6 +22055,64 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2362e0d55b979de478a38399766b7e24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  singleHitBoxPrefab: {fileID: 0}
+  doubleHitBoxPrefab: {fileID: 0}
+  dodgeObject: {fileID: 0}
+  jumpObject: {fileID: 0}
+  tutorialSingleLeftHitBoxPrefab: {fileID: 0}
+  tutorialSingleRightHitBoxPrefab: {fileID: 0}
+  tutorialDoubleHitBoxPrefab: {fileID: 0}
+  tutorialDodgeObject: {fileID: 0}
+  tutorialJumpObject: {fileID: 0}
+  spawnPointsArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &1295010371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295010361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed683de7d0ea95f4b950f1ae5fd92960, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  singleHitBoxPrefab: {fileID: 0}
+  doubleHitBoxPrefab: {fileID: 0}
+  dodgeObject: {fileID: 0}
+  jumpObject: {fileID: 0}
+  tutorialSingleLeftHitBoxPrefab: {fileID: 0}
+  tutorialSingleRightHitBoxPrefab: {fileID: 0}
+  tutorialDoubleHitBoxPrefab: {fileID: 0}
+  tutorialDodgeObject: {fileID: 0}
+  tutorialJumpObject: {fileID: 0}
+  spawnPointsArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &1295010372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295010361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 947effe616d87bf4aa572ff6caf14f34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   singleHitBoxPrefab: {fileID: 3421255345719884216, guid: b874ae3e2d5bde94aa103abd30ebb0d6, type: 3}
@@ -32457,8 +32487,8 @@ Transform:
   m_GameObject: {fileID: 1587944921}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.26, z: -9}
-  m_LocalScale: {x: 7.64, y: 4.85, z: -0.01}
+  m_LocalPosition: {x: 0, y: 1.46, z: -9}
+  m_LocalScale: {x: 7.64, y: 2.9277024, z: -0.01}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

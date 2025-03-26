@@ -2,6 +2,8 @@ using System;
 using UnityEngine;
 
 public class DemoSongTimeStamps : SongTimestamps {
+    private ObjectReferencesTimeStampDS objectReferencesTimeStampDS;
+    
     TimeStampDS[] timestamps = new TimeStampDS[130];
     
     // Method for returning the timestamp array
@@ -10,6 +12,18 @@ public class DemoSongTimeStamps : SongTimestamps {
     }
 
     private void Start() {
+        objectReferencesTimeStampDS = GetComponent<ObjectReferencesTimeStampDS>();
+        singleHitBoxPrefab = objectReferencesTimeStampDS.singleHitBoxPrefab;
+        doubleHitBoxPrefab = objectReferencesTimeStampDS.doubleHitBoxPrefab;
+        dodgeObject = objectReferencesTimeStampDS.dodgeObject;
+        jumpObject = objectReferencesTimeStampDS.jumpObject;
+        tutorialSingleLeftHitBoxPrefab = objectReferencesTimeStampDS.tutorialSingleLeftHitBoxPrefab;
+        tutorialSingleRightHitBoxPrefab = objectReferencesTimeStampDS.tutorialSingleRightHitBoxPrefab;
+        tutorialDoubleHitBoxPrefab = objectReferencesTimeStampDS.tutorialDoubleHitBoxPrefab;
+        tutorialDodgeObject = objectReferencesTimeStampDS.tutorialDodgeObject;
+        tutorialJumpObject = objectReferencesTimeStampDS.tutorialDodgeObject;
+        spawnPointsArray = objectReferencesTimeStampDS.spawnPointsArray;
+        
         timestamps[0] = new TimeStampDS(tutorialSingleRightHitBoxPrefab, 2.24f, spawnPointsArray[2]); // 00:02:12
         timestamps[1] = new TimeStampDS(tutorialSingleLeftHitBoxPrefab, 5.68f, spawnPointsArray[3]); // 00:05:34
         timestamps[2] = new TimeStampDS(tutorialSingleRightHitBoxPrefab, 8.44f, spawnPointsArray[2]); // 00:08:22

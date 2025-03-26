@@ -7,7 +7,7 @@ public class GameEndingHandler : MonoBehaviour {
     [SerializeField] private ScoreManager scoreManager;
     
     public void EndScreen() {
-        endingText.text = "Congratulations\nYou have completed the demo level of BeatBoxing\nYour final score : " + scoreManager.GetScore();
+        endingText.text = "Congratulations\nYou have completed the demo level of BeatBoxing";
         endingText.gameObject.SetActive(true);
         Invoke("ChangeToLeaderboardScene", 10f);
     }
