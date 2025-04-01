@@ -5519,7 +5519,7 @@ TrailRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.10062981
+        value: 0.06995964
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -5590,7 +5590,7 @@ GameObject:
   m_Component:
   - component: {fileID: 310293982}
   m_Layer: 0
-  m_Name: Object (1)
+  m_Name: Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21628,7 +21628,7 @@ GameObject:
   m_Component:
   - component: {fileID: 975359496}
   m_Layer: 0
-  m_Name: Object
+  m_Name: Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31857,7 +31857,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.2
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1417919639 stripped
 Transform:
@@ -32644,6 +32644,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10d14a727014aa24d81d6150614f3535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pLeft: {fileID: 29972293701539476, guid: 0d5c6f731f745dd48a121ec09669e257, type: 3}
+  pRight: {fileID: 2992357465589056075, guid: 6ddfaee4fbe2b19478f8b697d4cadd4e, type: 3}
+  pLeftLeft: {fileID: 756136672220509955, guid: 9b69c1909b82ffb4eb8dfad1bbd61092, type: 3}
+  pRightRight: {fileID: 738544808654153768, guid: 8bcb3716f4066fb44813595796a5e0be, type: 3}
+  pMiddle: {fileID: 1690568101918718678, guid: 23da18c889cfaaa4dbbabc5ddbd06c9e, type: 3}
+  pMiddleMiddle: {fileID: 4454102214572667388, guid: 0dfe8b671ab41ef428949d0a3d0d6386, type: 3}
 --- !u!1 &1695600861
 GameObject:
   m_ObjectHideFlags: 0

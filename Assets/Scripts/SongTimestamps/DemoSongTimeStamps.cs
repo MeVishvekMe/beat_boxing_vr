@@ -21,7 +21,7 @@ public class DemoSongTimeStamps : SongTimestamps {
         tutorialSingleRightHitBoxPrefab = objectReferencesTimeStampDS.tutorialSingleRightHitBoxPrefab;
         tutorialDoubleHitBoxPrefab = objectReferencesTimeStampDS.tutorialDoubleHitBoxPrefab;
         tutorialDodgeObject = objectReferencesTimeStampDS.tutorialDodgeObject;
-        tutorialJumpObject = objectReferencesTimeStampDS.tutorialDodgeObject;
+        tutorialJumpObject = objectReferencesTimeStampDS.tutorialJumpObject;
         spawnPointsArray = objectReferencesTimeStampDS.spawnPointsArray;
         
         timestamps[0] = new TimeStampDS(tutorialSingleRightHitBoxPrefab, 2.24f, spawnPointsArray[2]); // 00:02:12

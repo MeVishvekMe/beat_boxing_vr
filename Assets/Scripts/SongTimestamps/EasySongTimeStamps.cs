@@ -20,7 +20,7 @@ public class EasySongTimeStamps : SongTimestamps {
         tutorialSingleRightHitBoxPrefab = objectReferencesTimeStampDS.tutorialSingleRightHitBoxPrefab;
         tutorialDoubleHitBoxPrefab = objectReferencesTimeStampDS.tutorialDoubleHitBoxPrefab;
         tutorialDodgeObject = objectReferencesTimeStampDS.tutorialDodgeObject;
-        tutorialJumpObject = objectReferencesTimeStampDS.tutorialDodgeObject;
+        tutorialJumpObject = objectReferencesTimeStampDS.tutorialJumpObject;
         spawnPointsArray = objectReferencesTimeStampDS.spawnPointsArray;
         
         timestamps[0] = new TimeStampDS(new GameObject(), 2.34f, spawnPointsArray[2]); // 00:02:17
