@@ -1,7 +1,9 @@
 
 
+using UnityEngine;
+
 public class MediumSongTimeStamps : SongTimestamps {
-    private ObjectReferencesTimeStampDS objectReferencesTimeStampDS;
+    // private ObjectReferencesTimeStampDS objectReferencesTimeStampDS;
     
     TimeStampDS[] timestamps = new TimeStampDS[437];
     
@@ -11,18 +13,6 @@ public class MediumSongTimeStamps : SongTimestamps {
     }
 
     private void Start() {
-        
-        objectReferencesTimeStampDS = GetComponent<ObjectReferencesTimeStampDS>();
-        singleHitBoxPrefab = objectReferencesTimeStampDS.singleHitBoxPrefab;
-        doubleHitBoxPrefab = objectReferencesTimeStampDS.doubleHitBoxPrefab;
-        dodgeObject = objectReferencesTimeStampDS.dodgeObject;
-        jumpObject = objectReferencesTimeStampDS.jumpObject;
-        tutorialSingleLeftHitBoxPrefab = objectReferencesTimeStampDS.tutorialSingleLeftHitBoxPrefab;
-        tutorialSingleRightHitBoxPrefab = objectReferencesTimeStampDS.tutorialSingleRightHitBoxPrefab;
-        tutorialDoubleHitBoxPrefab = objectReferencesTimeStampDS.tutorialDoubleHitBoxPrefab;
-        tutorialDodgeObject = objectReferencesTimeStampDS.tutorialDodgeObject;
-        tutorialJumpObject = objectReferencesTimeStampDS.tutorialJumpObject;
-        spawnPointsArray = objectReferencesTimeStampDS.spawnPointsArray;
         
         timestamps[0] = new TimeStampDS(singleHitBoxPrefab, 8.86f, spawnPointsArray[0]); // 00:08:43
         timestamps[1] = new TimeStampDS(singleHitBoxPrefab, 9.70f, spawnPointsArray[1]); // 00:09:35

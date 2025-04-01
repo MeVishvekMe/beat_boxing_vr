@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
 
-
 public abstract class SongTimestamps : MonoBehaviour {
     
-    // Types of spawn boxes
+    // Object references from ObjectReferencesTimeStampDS
     public GameObject singleHitBoxPrefab;
     public GameObject doubleHitBoxPrefab;
     public GameObject dodgeObject;
@@ -17,6 +16,30 @@ public abstract class SongTimestamps : MonoBehaviour {
     public GameObject tutorialJumpObject;
     
     public Transform[] spawnPointsArray = new Transform[7];
+
+    public ObjectReferencesTimeStampDS objectReferencesTimeStampDS;
+
+    // Automatically called when the GameObject is created
+    protected virtual void Awake() {
+        objectReferencesTimeStampDS = GetComponent<ObjectReferencesTimeStampDS>();
+
+        if (objectReferencesTimeStampDS == null) {
+            Debug.LogError("ObjectReferencesTimeStampDS component is missing from this GameObject!");
+            return;
+        }
+
+        // Assign references from ObjectReferencesTimeStampDS
+        singleHitBoxPrefab = objectReferencesTimeStampDS.singleHitBoxPrefab;
+        doubleHitBoxPrefab = objectReferencesTimeStampDS.doubleHitBoxPrefab;
+        dodgeObject = objectReferencesTimeStampDS.dodgeObject;
+        jumpObject = objectReferencesTimeStampDS.jumpObject;
+        tutorialSingleLeftHitBoxPrefab = objectReferencesTimeStampDS.tutorialSingleLeftHitBoxPrefab;
+        tutorialSingleRightHitBoxPrefab = objectReferencesTimeStampDS.tutorialSingleRightHitBoxPrefab;
+        tutorialDoubleHitBoxPrefab = objectReferencesTimeStampDS.tutorialDoubleHitBoxPrefab;
+        tutorialDodgeObject = objectReferencesTimeStampDS.tutorialDodgeObject;
+        tutorialJumpObject = objectReferencesTimeStampDS.tutorialJumpObject;
+        spawnPointsArray = objectReferencesTimeStampDS.spawnPointsArray;
+    }
 
     public abstract TimeStampDS[] ReturnTimeStampArray();
 }
