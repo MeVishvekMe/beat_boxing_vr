@@ -17,6 +17,7 @@ public class LevelSelectorHelper : MonoBehaviour {
         songs.Add(GetComponent<EasySongTimeStamps>());
         songs.Add(GetComponent<MediumSongTimeStamps>());
         songs.Add(GetComponent<HardSongTimeStamps>());
+        songs.Add(GetComponent<HardwiredSongTimeStamps>());
         
         audioSource.clip = audioClips[selectedSongIndex];
         audioSource.Play();

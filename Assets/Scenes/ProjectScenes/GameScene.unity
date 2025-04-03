@@ -21946,6 +21946,7 @@ GameObject:
   - component: {fileID: 1295010370}
   - component: {fileID: 1295010369}
   - component: {fileID: 1295010368}
+  - component: {fileID: 1295010373}
   - component: {fileID: 1295010367}
   m_Layer: 0
   m_Name: TimeStampsSongsGameObject
@@ -21987,6 +21988,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f64c463a2bb31d34f935bf944ec16bab, type: 3}
   - {fileID: 8300000, guid: 81190c55aef68d64a8cd7a5fc2e192d3, type: 3}
   - {fileID: 8300000, guid: cc77bec375a063647b13a5accf2df727, type: 3}
+  - {fileID: 8300000, guid: b4339178cb885ce4cb518c3149d89cfa, type: 3}
 --- !u!114 &1295010368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22016,6 +22018,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  objectReferencesTimeStampDS: {fileID: 0}
 --- !u!114 &1295010369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22045,6 +22048,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  objectReferencesTimeStampDS: {fileID: 0}
 --- !u!114 &1295010370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22074,6 +22078,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  objectReferencesTimeStampDS: {fileID: 0}
 --- !u!114 &1295010371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22103,6 +22108,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  objectReferencesTimeStampDS: {fileID: 0}
 --- !u!114 &1295010372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22132,6 +22138,36 @@ MonoBehaviour:
   - {fileID: 6553656602559191602, guid: 23da18c889cfaaa4dbbabc5ddbd06c9e, type: 3}
   - {fileID: 5273964928652627063, guid: 0dfe8b671ab41ef428949d0a3d0d6386, type: 3}
   - {fileID: 8905521359409511058, guid: 6ddfb1804a077f94fbd49bfe6c6f2be3, type: 3}
+--- !u!114 &1295010373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295010361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af04b4e11823aa949ac61939f511eac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  singleHitBoxPrefab: {fileID: 0}
+  doubleHitBoxPrefab: {fileID: 0}
+  dodgeObject: {fileID: 0}
+  jumpObject: {fileID: 0}
+  tutorialSingleLeftHitBoxPrefab: {fileID: 0}
+  tutorialSingleRightHitBoxPrefab: {fileID: 0}
+  tutorialDoubleHitBoxPrefab: {fileID: 0}
+  tutorialDodgeObject: {fileID: 0}
+  tutorialJumpObject: {fileID: 0}
+  spawnPointsArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  objectReferencesTimeStampDS: {fileID: 0}
 --- !u!1 &1340680561
 GameObject:
   m_ObjectHideFlags: 0

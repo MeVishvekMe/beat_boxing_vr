@@ -18,7 +18,7 @@ public class Main {
                 StringBuilder sb = new StringBuilder();
                 sb.append("timestamps[" + currentIndex++ + "]" + " = new TimeStampDS(");
                 String type = colorConverter(color);
-                sb.append(type + ", " + time + ", ");
+                sb.append(type + ", " + time + "f, ");
                 String spawnPoint = positionConverter(position, color);
                 sb.append(spawnPoint + ");\n");
                 writer.write(sb.toString());
@@ -77,13 +77,16 @@ public class Main {
     }
 
     public static double extractTime(String s) {
-        int minutes = Integer.parseInt(s.substring(32, 33));
+        int minutes = Integer.parseInt(s.substring(32, 34));
         int seconds = Integer.parseInt(s.substring(35, 37));
         int milliseconds = Integer.parseInt(s.substring(38, 40));
 
-        if(milliseconds == 50) milliseconds--;
+        if (milliseconds == 50) milliseconds--;
         milliseconds *= 2;
-        return ((milliseconds / 100d) + seconds + (minutes * 60));
+
+        double time = ((milliseconds / 100d) + seconds + (minutes * 60));
+
+        return Math.round(time * 1000.0) / 1000.0; // Round to 3 decimal places
     }
 
 }
