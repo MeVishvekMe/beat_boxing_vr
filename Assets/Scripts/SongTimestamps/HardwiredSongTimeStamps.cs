@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 
 public class HardwiredSongTimeStamps : SongTimestamps {
-    TimeStampDS[] timestamps = new TimeStampDS[130];
+    TimeStampDS[] timestamps = new TimeStampDS[246];
     
     // Method for returning the timestamp array
     public override TimeStampDS[] ReturnTimeStampArray() {
