@@ -1,19 +1,19 @@
 # ninja log v5
-23	1793	7620810591975420	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	be4775ecf6fabbb7
-57	2127	7620810593477155	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	7c6d4a2642f71607
-1	1881	7620810592233486	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	b21e2824e1cbc0c7
-2393	2844	7620810601161411	C:/Unity Projects/beat_boxing_vr/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5j2x4y5s/obj/arm64-v8a/libgame.so	9434cdc5d918c88e
-40	1959	7620810592213248	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	8bc75a09a71f507c
-9	2222	7620810594203399	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	87827b5fbe8b1de3
-48	2052	7620810592601511	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	bb226c6863edd20e
-31	2391	7620810596173798	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	e0ea1220654bf0e
-16	2393	7620810597453451	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	3aabb0ca2ecc2296
 57	3455	7651910411234799	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	be4775ecf6fabbb7
-72	3460	7651910412067447	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	bb226c6863edd20e
 12	3512	7651910412185304	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	b21e2824e1cbc0c7
 149	3593	7651910413564855	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	7c6d4a2642f71607
-36	3674	7651910414469318	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	87827b5fbe8b1de3
 21	3889	7651910416431960	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	8bc75a09a71f507c
+4158	4790	7651910425680712	C:/Unity Projects/beat_boxing_vr/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5j2x4y5s/obj/arm64-v8a/libgame.so	9434cdc5d918c88e
+72	3460	7651910412067447	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	bb226c6863edd20e
+36	3674	7651910414469318	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	87827b5fbe8b1de3
 86	3927	7651910417219377	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	e0ea1220654bf0e
 29	4157	7651910419467327	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	3aabb0ca2ecc2296
-4158	4790	7651910425680712	C:/Unity Projects/beat_boxing_vr/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5j2x4y5s/obj/arm64-v8a/libgame.so	9434cdc5d918c88e
+46	1427	7664049818549723	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	be4775ecf6fabbb7
+4	1476	7664049819088621	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	b21e2824e1cbc0c7
+30	1503	7664049819337229	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	bb226c6863edd20e
+23	1551	7664049819870439	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	8bc75a09a71f507c
+56	1590	7664049820271766	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	7c6d4a2642f71607
+10	1671	7664049821106865	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	87827b5fbe8b1de3
+37	1807	7664049822498449	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	e0ea1220654bf0e
+16	1934	7664049823731194	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	3aabb0ca2ecc2296
+1934	2285	7664049827256819	C:/Unity Projects/beat_boxing_vr/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5j2x4y5s/obj/arm64-v8a/libgame.so	9434cdc5d918c88e
