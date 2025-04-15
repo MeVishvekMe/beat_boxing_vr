@@ -16,7 +16,7 @@ public class UserInputHandler : MonoBehaviour {
             return;
         }
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
 
         xriDefaultInputActions = new XRIDefaultInputActions(); // Ensure it's initialized
     }
@@ -40,18 +40,22 @@ public class UserInputHandler : MonoBehaviour {
     }
 
     private void AButtonOnPerformed(InputAction.CallbackContext obj) {
-        PauseEventFire();
+        PauseEventFire(false);
     }
 
     private void BButtonOnPerformed(InputAction.CallbackContext obj) {
         ResumeEventFire();
     }
 
-    public void PauseEventFire() {
+    public void PauseEventFire(bool isTutorial) {
         pauseButtonEvent?.Invoke(this, EventArgs.Empty);
+        if (!isTutorial) {
+            PauseManager.Instance.PauseDisableObjects();
+        }
     }
 
     public void ResumeEventFire() {
         resumeButtonEvent?.Invoke(this, EventArgs.Empty);
+        PauseManager.Instance.ResumeDisableObjects();
     }
 }
