@@ -34154,8 +34154,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Score
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0551467586da50b44a960f274c35acb4, type: 2}
-  m_sharedMaterial: {fileID: 5173469920640411256, guid: 0551467586da50b44a960f274c35acb4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f62a4a406d7719f43b92808d443efbbd, type: 2}
+  m_sharedMaterial: {fileID: -8497654987513991741, guid: f62a4a406d7719f43b92808d443efbbd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -34185,7 +34185,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 2
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
